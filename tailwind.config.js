@@ -10,6 +10,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      black: '#110E0D',
       lbg: "#F2EDDE",
       dbg: "#261E1A",
       red: "#684145",
@@ -20,6 +21,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)'],
         serif: ['var(--font-abhaya)'],
+        logo: ['var(--font-comfortaa)'],
       },
     },
     plugins: [],
