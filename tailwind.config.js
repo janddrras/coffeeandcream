@@ -10,12 +10,19 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: '#110E0D',
-      lbg: "#F2EDDE",
-      dbg: "#261E1A",
+      black: '#101010',
+      white: '#FFFFFF',
       red: "#684145",
-      bronze: "#8A7259",
-      accent: "#DED9CB",
+      coffee: {
+        100: '#110E0D',
+        90: '#191513',
+        80: '#261E1A',
+      },
+      cream: {
+        10: '#F2EDDE',
+        20: '#DED9CB',
+        30: '#8A7259',
+      },
     },
     extend: {
       fontFamily: {

@@ -104,7 +104,7 @@ const Intro = () => {
         </motion.svg>
         <motion.div variants={parent} animate="visible" initial="hidden">
           {name.map((letter, i) => (
-            <motion.span className="inline-block text-4xl tracking-wider font-light font-logo text-lbg" variants={span} key={i}>
+            <motion.span className="inline-block text-4xl tracking-wider font-light font-logo text-cream-10" variants={span} key={i}>
               {letter}
             </motion.span>
           ))}
