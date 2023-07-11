@@ -1,53 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import type { Variants } from "framer-motion"
+import { introFull, introParent, introQuarter, introSpan } from "../_lib/variants/intro"
+import Logo from "./Logo"
 
 const Intro = () => {
-  const r = 40
-  const strokeLength = (r: number) => 2 * Math.PI * r
-  const strokeDasharray = (r: number) => `${strokeLength(r)} ${strokeLength(r)}`
   const name = "coffeeandcream".split("")
-
-  const quarter: Variants = {
-    hidden: { opacity: 0, rotate: -560, pathLength: 0 },
-    visible: (i: number) => {
-      const delay = i * 0.6
-      return {
-        opacity: 1,
-        rotate: 49,
-        pathLength: 0.75,
-        transition: { duration: 1, ease: "easeInOut", delay }
-      }
-    }
-  }
-  const full: Variants = {
-    hidden: { opacity: 0, rotate: -560, pathLength: 0 },
-    visible: (i: number) => {
-      const delay = i * 0.5
-      return {
-        opacity: 1,
-        rotate: 49,
-        pathLength: 1,
-        transition: { duration: 1, ease: "easeInOut", delay }
-      }
-    }
-  }
-  const span: Variants = {
-    hidden: { opacity: 0, y: 0 },
-    visible: {
-      opacity: 1,
-      y: [0, -10, 0],
-      transition: { duration: 0.75, ease: "easeOut" }
-    }
-  }
-  const parent: Variants = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 1 }
-    }
-  }
 
   return (
     <motion.section
@@ -62,49 +20,12 @@ const Intro = () => {
       }}
     >
       <div className="w-[600px] h-[600px] flex-col items-center flex place-self-center">
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="200"
-          height="200"
-          viewBox="0 0 200 200"
-          initial="hidden"
-          animate="visible"
-          className="mb-12"
-        >
-          <motion.circle
-            cx="100"
-            cy="100"
-            r={`${r}`}
-            style={{ fill: "none", stroke: "#F2EDDE", strokeWidth: "4", strokeLinecap: "round" }}
-            pathLength={`${strokeLength(r)}`}
-            strokeDasharray={`${strokeDasharray(r)}`}
-            custom={0}
-            variants={quarter}
-          />
-          <motion.circle
-            cx="100"
-            cy="100"
-            r={`${r + 20}`}
-            style={{ fill: "none", stroke: "#F2EDDE", strokeWidth: "4", strokeLinecap: "round" }}
-            pathLength={`${strokeLength(r)}`}
-            strokeDasharray={`${strokeDasharray(r)}`}
-            custom={1}
-            variants={quarter}
-          />
-          <motion.circle
-            cx="100"
-            cy="100"
-            r={`${r + 40}`}
-            style={{ fill: "none", stroke: "#F2EDDE", strokeWidth: "4", strokeLinecap: "round" }}
-            pathLength={`${strokeLength(r)}`}
-            strokeDasharray={`${strokeDasharray(r)}`}
-            custom={2}
-            variants={full}
-          />
-        </motion.svg>
-        <motion.div variants={parent} animate="visible" initial="hidden">
+        <div className="mb-12">
+          <Logo size={200} r={40} color="#F2EDDE" variant1={introQuarter} variant2={introFull} />
+        </div>
+        <motion.div variants={introParent} animate="visible" initial="hidden">
           {name.map((letter, i) => (
-            <motion.span className="inline-block text-4xl tracking-wider font-light font-logo text-cream-10" variants={span} key={i}>
+            <motion.span className="inline-block text-4xl tracking-wider font-light font-logo text-cream-10" variants={introSpan} key={i}>
               {letter}
             </motion.span>
           ))}
