@@ -1,27 +1,29 @@
 "use client"
 
-import { useTheme } from "next-themes"
+import Link from "next/link"
+import { PiGearLight } from "react-icons/pi"
 import Container from "./Container"
 import Logo from "./Logo"
-import { useEffect, useState } from "react"
 import { logoInner } from "../_lib/variants/logo"
-import Link from "next/link"
+import MenuButton from "./MenuButton"
+import Menu from "./Menu"
 
 const Header = () => {
-  const { theme } = useTheme()
-  const [color, setcolor] = useState("currentColor")
-  useEffect(() => {
-    theme === "light" ? setcolor("#261E1A") : setcolor("#F2EDDE")
-  }, [theme])
-
   return (
-    <header className="fixed h-52 w-full z-20">
+    <header className="fixed h-52 w-full z-20 pt-12">
       <Container border={false}>
-        <div className="relative flex items-center z-10 gap-5 pt-12">
-          <Link href="/">
-            <Logo size={60} r={14} strokeWidth={2} color={color} variant1={logoInner} whileHover="whileHover" />
-          </Link>
-          <h3 className="font-logo text-2xl tracking-wider font-light">coffeeandcream</h3>
+        <div className="flex justify-between">
+          <div className="flex items-center gap-5">
+            <Link href="/">
+              <Logo size={60} r={14} strokeWidth={2} variant1={logoInner} whileHover="whileHover" />
+            </Link>
+            <h3 className="font-logo text-2xl tracking-wider font-light">coffeeandcream</h3>
+          </div>
+          <div className="flex items-center gap-5">
+            <PiGearLight className="text-4xl hover:rotate-180 transition-transform duration-500 cursor-pointer" />
+            <MenuButton />
+            <Menu />
+          </div>
         </div>
       </Container>
     </header>

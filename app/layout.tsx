@@ -1,7 +1,7 @@
 import "./_lib/globals.css"
 import type { Metadata } from "next"
 import { Inter, Abhaya_Libre, Comfortaa } from "next/font/google"
-import { Theme } from "./_components/Providers"
+import { AppContextProvider, Theme } from "./_components/Providers"
 import Footer from "./_components/Footer"
 import Header from "./_components/Header"
 
@@ -24,9 +24,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${inter.variable} ${abhaya.variable} ${comfortaa.variable} bg-cream-10 text-coffee-80 dark:bg-coffee-100 dark:text-cream-10 scroll-smooth`}
       >
         <Theme>
-          <Header />
+          <AppContextProvider>
+            <Header />
+          </AppContextProvider>
           <main className="relative">
-            <div className="w-80 h-full fixed -top-16 -left-6 md:left-24 z-0 opacity-75">
+            <div className="w-80 h-full fixed -top-16 -left-6 md:left-24 2xl:left-48 z-0 opacity-75">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.72 123.21" className="w-full">
                 <path
                   className="fill-cream-20 dark:fill-coffee-90"
