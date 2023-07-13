@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
 import { useAppContext } from "./Providers"
-import { linkVariants, listVariants, menuLayer, menuVariant } from "../_lib/variants/menu"
+import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "../_lib/variants/menu"
 import menuItems from "../_lib/docs/menuItems.json"
 
 const Menu = () => {
@@ -24,13 +24,16 @@ const Menu = () => {
           >
             {menuItems.map((item, idx) => (
               <Link href={item.url} key={item.id}>
-                <motion.li className="py-24 px-32 flex items-start" onClick={() => setMenu(!menu)} variants={linkVariants}>
-                  <span className="text-4xl text-cream-10 mr-14">
-                    <HiOutlineArrowRight />
-                  </span>
-                  <p className="text-4xl font-sans text-cream-20 font-light tracking-wider inline-block">{item.name}</p>
+                <motion.li className="py-24 pl-8 pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
+                  <motion.div className="w-full flex items-start" whileHover="hovered">
+                    <motion.span className="text-4xl text-cream-30 mr-14 opacity-0" variants={spanVariants}>
+                      <HiOutlineArrowRight />
+                    </motion.span>
+                    <motion.p className="text-4xl font-sans text-cream-20 font-light tracking-wider" variants={textVariants}>
+                      {item.name}
+                    </motion.p>
+                  </motion.div>
                 </motion.li>
-                {idx < menuItems.length - 1 && <motion.div className="w-full h-[0.5px] bg-cream-20 opacity-20" />}
               </Link>
             ))}
           </motion.ul>
