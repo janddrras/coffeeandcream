@@ -7,14 +7,18 @@ import { useAppContext } from "./Providers"
 interface MenuButtonProps {}
 
 const MenuButton = ({}: MenuButtonProps) => {
-  const { menu, setMenu } = useAppContext()
+  const { menu, setMenu, setSettings } = useAppContext()
+  const clickAction = () => {
+    setSettings(false)
+    setMenu(!menu)
+  }
 
   return (
     <motion.button
       className="relative w-14 h-14 z-50"
       initial="initial"
       whileHover="hover"
-      onClick={() => setMenu(!menu)}
+      onClick={clickAction}
       animate={menu ? "tap" : "initial"}
     >
       <svg viewBox="0 0 12 12">
