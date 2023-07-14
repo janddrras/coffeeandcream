@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { introFull, introParent, introQuarter, introSpan } from "../_lib/variants/intro"
-import Logo from "./Logo"
+import { introFull, introParent, introQuarter, introSpan } from "@/app/_lib/variants/intro"
+import Logo from "@/app/_components/Layout/Logo"
 
 const Intro = () => {
   const name = "coffeeandcream".split("")

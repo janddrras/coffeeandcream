@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import { IoClose, IoSunny, IoMoon } from "react-icons/io5"
-import { useAppContext } from "../Providers"
+import { useAppContext } from "@/app/_components/Providers"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
-import { backgroundVariant, contentVariant, lineVariant, settingsVariant, spring } from "../../_lib/variants/settings"
+import { backgroundVariant, contentVariant, lineVariant, settingsVariant, spring } from "@/app/_lib/variants/settings"
 import Link from "next/link"
 
 const Settings = () => {

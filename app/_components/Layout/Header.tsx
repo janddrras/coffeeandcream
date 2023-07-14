@@ -2,13 +2,13 @@
 
 import Link from "next/link"
 import { PiGearLight } from "react-icons/pi"
-import Container from "./Container"
-import Logo from "./Logo"
-import { logoInner } from "../../_lib/variants/logo"
-import MenuButton from "./MenuButton"
-import Menu from "./Menu"
-import Settings from "./Settings"
-import { useAppContext } from "../Providers"
+import Container from "@/app/_components/Layout/Container"
+import Logo from "@/app/_components/Layout/Logo"
+import { logoInner } from "@/app/_lib/variants/logo"
+import MenuButton from "@/app/_components/Layout/MenuButton"
+import Menu from "@/app/_components/Layout/Menu"
+import Settings from "@/app/_components/Layout/Settings"
+import { useAppContext } from "@/app/_components/Providers"
 
 const Header = () => {
   const { settings, setSettings } = useAppContext()

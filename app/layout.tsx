@@ -1,9 +1,9 @@
-import "./_lib/globals.css"
+import "@/app/_lib/globals.css"
 import type { Metadata } from "next"
 import { Inter, Abhaya_Libre, Comfortaa } from "next/font/google"
-import { AppContextProvider, Theme } from "./_components/Providers"
-import Footer from "./_components/Layout/Footer"
-import Header from "./_components/Layout/Header"
+import { AppContextProvider, Theme } from "@/app/_components/Providers"
+import Footer from "@/app/_components/Layout/Footer"
+import Header from "@/app/_components/Layout/Header"
 
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" })
 const abhaya = Abhaya_Libre({ subsets: ["latin"], display: "swap", weight: ["800"], variable: "--font-abhaya" })
