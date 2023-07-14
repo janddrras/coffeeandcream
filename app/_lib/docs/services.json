@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Web",
+    "description": ["Landing page", "Portfolio Site", "Corporate Site", "Web app", "Web Shop", "Blog"],
+    "image": "/images/web.jpg"
+  },
+  {
+    "name": "Development",
+    "description": ["Coding from design", "Web Apps", "CMS", "Animations", "Hosting"],
+    "image": "/images/coding.jpg"
+  },
+  {
+    "name": "Design",
+    "description": ["Web design", "Social media design", "Print Design", "Logo Design", "Branding"],
+    "image": "/images/design.jpg"
+  }
+]

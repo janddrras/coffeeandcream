@@ -20,7 +20,7 @@ const Settings = () => {
       initial="closed"
     >
       <motion.div className="w-full h-1 bg-coffee-80 dark:bg-cream-10" variants={lineVariant} />
-      <motion.div className="w-full h-full bg-cream-20 dark:bg-coffee-80/30 relative origin-top" variants={backgroundVariant}>
+      <motion.div className="w-full h-full bg-cream-20/95 dark:bg-coffee-80/95 relative origin-top" variants={backgroundVariant}>
         <button className="absolute top-2 right-2 hover:text-brightRed text-xl" onClick={() => setSettings(false)}>
           <IoClose />
         </button>

@@ -1,4 +1,4 @@
-import Container from "@/app/_components/Layout/Container"
+import Container from "@/app/_components/Layout/ui/Container"
 import { ImFacebook2, ImGithub, ImLinkedin } from "react-icons/im"
 
 const Footer = () => {
