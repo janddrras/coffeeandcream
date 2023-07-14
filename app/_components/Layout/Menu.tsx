@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
-import { useAppContext } from "./Providers"
-import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "../_lib/variants/menu"
-import menuItems from "../_lib/docs/menuItems.json"
+import { useAppContext } from "../Providers"
+import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "../../_lib/variants/menu"
+import menuItems from "../../_lib/docs/menuItems.json"
 
 const Menu = () => {
   const { menu, setMenu } = useAppContext()

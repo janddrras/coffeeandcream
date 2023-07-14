@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes"
 import Intro from "./_components/Intro"
-import Container from "./_components/Container"
+import Container from "./_components/Layout/Container"
 
 export default function Home() {
   const { theme, setTheme } = useTheme()

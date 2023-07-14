@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { menuButtonCircle, menuButtonSpan, menuLine1, menuLine2 } from "../_lib/variants/menuButton"
-import { useAppContext } from "./Providers"
+import { menuButtonCircle, menuButtonSpan, menuLine1, menuLine2 } from "../../_lib/variants/menuButton"
+import { useAppContext } from "../Providers"
 
 interface MenuButtonProps {}
 

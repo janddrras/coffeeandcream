@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import { IoClose, IoSunny, IoMoon } from "react-icons/io5"
-import { useAppContext } from "./Providers"
+import { useAppContext } from "../Providers"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
-import { backgroundVariant, contentVariant, lineVariant, settingsVariant, spring } from "../_lib/variants/settings"
+import { backgroundVariant, contentVariant, lineVariant, settingsVariant, spring } from "../../_lib/variants/settings"
 import Link from "next/link"
 
 const Settings = () => {
@@ -14,7 +14,7 @@ const Settings = () => {
 
   return (
     <motion.aside
-      className="absolute top-28 right-2 w-64 h-64 z-40 origin-top-right"
+      className="absolute top-32 right-2 w-64 h-64 z-40 origin-top-right"
       variants={settingsVariant}
       animate={settings ? "open" : "closed"}
       initial="closed"
