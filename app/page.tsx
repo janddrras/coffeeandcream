@@ -4,6 +4,7 @@ import Intro from "@/app/_components/Intro"
 import Hero from "@/app/_components/HomePage/Hero"
 import Welcome from "@/app/_components/HomePage/Welcome"
 import Services from "@/app/_components/HomePage/Services"
+import Faq from "@/app/_components/HomePage/Faq"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <Welcome />
       <Services />
+      <Faq />
     </>
   )
 }

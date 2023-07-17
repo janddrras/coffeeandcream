@@ -11,7 +11,7 @@ const Container = ({ children, border = true, stain = false }: ContainerProps) =
         <div className="relative z-10">
           {children}
           {stain && (
-            <div className="w-80 h-full absolute -top-16 -left-8 md:-left-24 z-0 opacity-75">
+            <div className="w-80 max-h-min absolute -top-16 -left-8 md:-left-24 z-0 opacity-75 pointer-events-none">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.72 123.21" className="w-full">
                 <path
                   className="fill-cream-20 dark:fill-coffee-90"
