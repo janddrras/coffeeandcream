@@ -1,7 +1,7 @@
 import { Variants } from "framer-motion"
 
 export const titleVariants: Variants = {
-  initial: { y: 75, transition: { duration: 0.4, ease: "easeInOut" } },
+  initial: { y: 85, transition: { duration: 0.4, ease: "easeInOut" } },
   hover: { y: 0, transition: { duration: 0.4, ease: "easeInOut" } }
 }
 export const listVariants: Variants = {

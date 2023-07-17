@@ -12,9 +12,9 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ name, description, image }: ServiceCardProps) => {
   return (
-    <motion.article className="w-52 h-52 bg-cover relative overflow-hidden shadow-lg" whileHover="hover" initial="initial">
+    <motion.article className="w-64 h-64 bg-cover relative overflow-hidden shadow-lg" whileHover="hover" initial="initial">
       <motion.h3
-        className="absolute mx-auto text-cream-10 font-sans font-black inset-0 text-center pt-4 tracking-wide shadow-sm text-xl z-30"
+        className="absolute mx-auto text-cream-10 font-sans font-black inset-0 text-center pt-4 tracking-wide shadow-sm text-2xl z-30"
         variants={titleVariants}
       >
         {name}
