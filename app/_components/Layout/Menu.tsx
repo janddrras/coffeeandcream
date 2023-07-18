@@ -18,18 +18,18 @@ const Menu = () => {
       <motion.div className="bg-black grid place-items-center absolute inset-y-0 left-4 w-full z-30" variants={menuLayer}>
         <nav>
           <motion.ul
-            className="flex flex-col justify-start items-left min-h-screen py-52"
+            className="flex flex-col justify-start items-left min-h-screen py-24 md:py-52"
             animate={menu ? "open" : "closed"}
             variants={listVariants}
           >
             {menuItems.map((item, idx) => (
               <Link href={item.url} key={item.id}>
-                <motion.li className="py-24 pl-8 pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
-                  <motion.div className="w-full flex items-start" whileHover="hovered">
-                    <motion.span className="text-4xl text-cream-30 mr-14 opacity-0" variants={spanVariants}>
+                <motion.li className="py-24 md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
+                  <motion.div className="w-full flex flex-col md:flex-row items-start" whileHover="hovered">
+                    <motion.span className="text-4xl text-cream-30 pb-4 md:pb-0 mr-8 md:mr-14 opacity-0" variants={spanVariants}>
                       <HiOutlineArrowRight />
                     </motion.span>
-                    <motion.p className="text-4xl font-sans text-cream-20 font-light tracking-wider" variants={textVariants}>
+                    <motion.p className="text-2xl md:text-4xl font-sans text-cream-20 font-light tracking-wider" variants={textVariants}>
                       {item.name}
                     </motion.p>
                   </motion.div>

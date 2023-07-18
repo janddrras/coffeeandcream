@@ -5,7 +5,7 @@ import ServiceCard from "../Layout/ui/ServiceCard"
 const Services = () => {
   return (
     <section>
-      <div className="pt-16 pb-32 px-8">
+      <div className="pt-16 md:pb-32 pb-8 px-2 md:px-8">
         <SectionTitle>Services</SectionTitle>
         <p className="font-sans font-regular text-sm tracking-wide leading-8 text-center max-w-3xl mx-auto">
           I offer a variety of services to help your online business succeed. In addition to designing and developing websites I can also
