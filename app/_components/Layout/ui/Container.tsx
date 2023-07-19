@@ -8,7 +8,7 @@ const Container = ({ children, border = true, stain = false }: ContainerProps) =
   return (
     <div className="max-w-screen-2xl sm:px-24 md:px-32 lg:px-40 mx-auto h-full">
       <div className={`h-full ${border ? "border-x border-cream-30/25 dark:border-coffee-80 relative" : ""}`}>
-        <div className="relative z-10">
+        <div className="relative">
           {children}
           {stain && (
             <div className="w-80 max-h-min absolute -top-16 -left-8 md:-left-24 z-0 opacity-75 pointer-events-none">

@@ -28,9 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AppContextProvider>
             <Header />
           </AppContextProvider>
-          <Container stain={true}>
-            <main className="relative">{children}</main>
-          </Container>
+          <main className="relative">
+            <Container stain={true}>{children}</Container>
+          </main>
           <Footer />
         </Theme>
       </body>

@@ -1,7 +1,13 @@
+import ContactHero from "@/app/_components/ContactPage/ContactHero"
+
 interface ContactProps {}
 
 const Contact = ({}: ContactProps) => {
-  return <div>Contact</div>
+  return (
+    <>
+      <ContactHero />
+    </>
+  )
 }
 
 export default Contact
