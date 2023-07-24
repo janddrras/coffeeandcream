@@ -1,6 +1,6 @@
-import SectionTitle from "@/app/_components/Layout/ui/SectionTitle"
+import SectionTitle from "@/app/_components/ui/SectionTitle"
 import serviceList from "@/app/_lib/docs/services.json"
-import ServiceCard from "../Layout/ui/ServiceCard"
+import ServiceCard from "../ui/ServiceCard"
 
 const Services = () => {
   return (

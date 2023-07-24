@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import SectionTitle from "../Layout/ui/SectionTitle"
+import SectionTitle from "../ui/SectionTitle"
 
 const Welcome = () => {
   return (

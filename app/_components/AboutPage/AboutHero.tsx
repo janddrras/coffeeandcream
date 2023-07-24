@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 
-import PageTitle from "@/app/_components/Layout/ui/PageTitle"
+import PageTitle from "@/app/_components/ui/PageTitle"
 import { motion } from "framer-motion"
 import { circleVariants, lineVariants } from "@/app/_lib/variants/hero"
 import useMeasure from "react-use-measure"

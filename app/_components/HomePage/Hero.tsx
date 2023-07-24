@@ -2,7 +2,7 @@
 "use client"
 
 import useMeasure from "react-use-measure"
-import PageTitle from "../Layout/ui/PageTitle"
+import PageTitle from "../ui/PageTitle"
 import { motion } from "framer-motion"
 import { circleVariants, lineVariants } from "@/app/_lib/variants/hero"
 

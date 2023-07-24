@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { PiGearLight } from "react-icons/pi"
-import Container from "@/app/_components/Layout/ui/Container"
-import Logo from "@/app/_components/Layout/ui/Logo"
+import Container from "@/app/_components/ui/Container"
+import Logo from "@/app/_components/ui/Logo"
 import { logoInner } from "@/app/_lib/variants/logo"
-import MenuButton from "@/app/_components/Layout/ui/MenuButton"
+import MenuButton from "@/app/_components/ui/MenuButton"
 import Menu from "@/app/_components/Layout/Menu"
 import Settings from "@/app/_components/Layout/Settings"
 import { useAppContext } from "@/app/_components/Providers"

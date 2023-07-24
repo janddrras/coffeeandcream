@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 
-import PageTitle from "@/app/_components/Layout/ui/PageTitle"
+import PageTitle from "@/app/_components/ui/PageTitle"
 import { motion } from "framer-motion"
 import { circleVariants, lineVariants } from "@/app/_lib/variants/hero"
 import useMeasure from "react-use-measure"
@@ -13,7 +13,7 @@ const ContactHero = () => {
 
   return (
     <section className="relative" ref={ref}>
-      <div className="relative w-full pt-64 lg:pb-24 pb-96 px-8">
+      <div className="relative w-full pt-64 lg:pb-32 pb-96 px-8">
         <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-8">
           <div className="w-full lg:w-1/2 xl:w-full">
             <PageTitle>Contact</PageTitle>

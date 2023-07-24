@@ -2,8 +2,8 @@
 import { LayoutGroup, motion } from "framer-motion"
 
 import { useState } from "react"
-import SectionTitle from "@/app/_components/Layout/ui/SectionTitle"
-import FaqCard from "@/app/_components/Layout/ui/FaqCard"
+import SectionTitle from "@/app/_components/ui/SectionTitle"
+import FaqCard from "@/app/_components/ui/FaqCard"
 import faq from "@/app/_lib/docs/faq.json"
 
 const Faq = () => {
