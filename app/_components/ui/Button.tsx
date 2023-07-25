@@ -11,11 +11,16 @@ interface ButtonProps extends AriaButtonProps {}
 const Button = (props: ButtonProps) => {
   let ref = useRef(null)
   let { buttonProps } = useButton(props, ref)
-  let { children } = props
+  let { children, isDisabled } = props
 
   return (
     <button ref={ref} {...buttonProps} className="cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
-      <motion.div className=" px-12 py-2 relative overflow-hidden" initial="initial" whileHover="hover" whileTap="pressed">
+      <motion.div
+        className=" px-12 py-2 relative overflow-hidden"
+        initial="initial"
+        whileHover={!isDisabled ? "hover" : "initial"}
+        whileTap={!isDisabled ? "pressed" : "initial"}
+      >
         <motion.span className="absolute text-xl left-4 top-3 z-20 dark:text-cream-20 tracking-wide" variants={iconVariants}>
           <RiMailSendLine />
         </motion.span>
