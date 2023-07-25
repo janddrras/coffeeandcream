@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [privacyAgreement, setPrivacyAgreement] = useState(false)
 
   return (
     <section className="bg-cream-30/10 dark:bg-coffee-90/200">
@@ -19,7 +20,9 @@ const ContactForm = () => {
           <TextInput label="Name or Company" onChange={setName} value={name} type="text" isRequired />
           <TextInput label="Email address" onChange={setEmail} value={email} type="email" isRequired />
           <AreaInput label="Your Message" onChange={setMessage} value={message} type="textarea" isRequired />
-          <Checkbox>I agree with the privacy statement and to be contacted by Coffeeandcream office</Checkbox>
+          <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm">
+            I agree with the privacy statement and to be contacted by Coffeeandcream office
+          </Checkbox>
         </form>
       </div>
     </section>

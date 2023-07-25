@@ -3,10 +3,11 @@ import { VisuallyHidden, useCheckbox, useFocusRing } from "react-aria"
 import type { AriaCheckboxProps } from "react-aria"
 import { useRef } from "react"
 import { motion, useMotionValue, useTransform } from "framer-motion"
-import { boxVariants, tickVariants } from "@/app/_lib/variants/checkboxVariants"
+import { tickVariants } from "@/app/_lib/variants/checkboxVariants"
 
 interface CheckboxProps extends AriaCheckboxProps {
   children: React.ReactNode
+  labelStyles?: string
 }
 
 const Checkbox = (props: CheckboxProps) => {
@@ -20,30 +21,51 @@ const Checkbox = (props: CheckboxProps) => {
   const opacity = useTransform(pathLength, [0.05, 0.15], [0, 1])
 
   return (
-    <label className="flex items-center cursor-pointer font-sans">
+    <label className={`flex items-center cursor-pointer font-sans ${props.labelStyles}`}>
       <VisuallyHidden>
         <input {...inputProps} {...focusProps} ref={ref} />
       </VisuallyHidden>
       <motion.svg
+        width="31"
+        height="27"
+        viewBox="0 0 31 27"
+        fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         initial={false}
         animate={isSelected ? "checked" : "unchecked"}
-        width={21}
-        height={21}
         className="mr-2"
       >
-        <motion.rect fill="transparent" strokeWidth="3" stroke="currentColor" width="21" height="21" variants={boxVariants} />
+        <rect
+          x="4.5"
+          y="5.5"
+          width="20"
+          height="20"
+          strokeWidth={3}
+          stroke="#8A7259"
+          className={`${
+            isSelected ? "dark:fill-cream-10 fill-coffee-80/30" : "fill-transparent"
+          } hover:scale-90 origin-center transition-transform duration-200 ease-in-out`}
+        />
         {isFocusVisible && (
-          <motion.rect fill="transparent" strokeWidth="3" stroke="currentColor" width="20" height="20" variants={boxVariants} />
+          <rect
+            x="4.5"
+            y="5.5"
+            width="19"
+            height="19"
+            strokeWidth={3}
+            stroke="#8A7259"
+            className={`${
+              isSelected ? "fill-cream-10" : "fill-transparent"
+            } hover:scale-90 origin-center transition-transform duration-200 ease-in-out`}
+          />
         )}
-        <motion.polyline
-          points="4 11 8 15 17 6"
-          fill="transparent"
-          strokeWidth="4"
-          stroke="currentColor"
+        <motion.path
+          d="M1 9L13.5 20L29 0.5"
+          stroke="#8A7259"
           strokeLinecap="round"
           strokeLinejoin="round"
+          strokeWidth={3}
           variants={tickVariants}
           style={{ pathLength, opacity }}
         />
