@@ -1,10 +1,12 @@
-import { useCallback, useState } from "react"
+import { use, useCallback, useEffect, useState } from "react"
 import { sendContactForm } from "@/app/_lib/api"
 
 const useContactForm = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [response, setResponse] = useState("")
   const [error, setError] = useState({
     nameErrorMessage: "",
     emailErrorMessage: "",
@@ -26,10 +28,28 @@ const useContactForm = () => {
   }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true)
     e.preventDefault()
     validateForm({ name, email, message })
-    await sendContactForm({ name, email, message })
+    try {
+      await sendContactForm({ name, email, message })
+      setLoading(false)
+      setName("")
+      setEmail("")
+      setMessage("")
+      setResponse("Thank you for your message! I'll get back to you as soon as possible.")
+    } catch (error) {
+      console.log(error)
+      setLoading(false)
+      setResponse("Something went wrong. Please try again later.")
+    }
   }
+
+  useEffect(() => {
+    if (response) {
+      setTimeout(() => setResponse(""), 5000)
+    }
+  }, [response])
 
   return {
     name,
@@ -40,7 +60,9 @@ const useContactForm = () => {
     setMessage,
     error,
     setError,
-    handleSubmit
+    handleSubmit,
+    loading,
+    response
   }
 }
 

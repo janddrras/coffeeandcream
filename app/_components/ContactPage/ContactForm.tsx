@@ -5,11 +5,11 @@ import TextInput from "@/app/_components/ui/TextInput"
 import AreaInput from "@/app/_components/ui/AreaInput"
 import { useState } from "react"
 import Checkbox from "@/app/_components/ui/Checkbox"
-import Button from "../ui/Button"
+import Button from "@/app/_components/ui/Button"
 import useContactForm from "@/app/_hooks/useContactForm"
 
 const ContactForm = () => {
-  const { name, setName, email, setEmail, message, setMessage, error, handleSubmit } = useContactForm()
+  const { name, setName, email, setEmail, message, setMessage, error, handleSubmit, loading, response } = useContactForm()
   const [privacyAgreement, setPrivacyAgreement] = useState(false)
 
   return (
@@ -38,11 +38,12 @@ const ContactForm = () => {
             <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm">
               I agree with the privacy statement and to be contacted by Coffeeandcream office
             </Checkbox>
-            <Button type="submit" isDisabled={!privacyAgreement}>
-              SEND
+            <Button type="submit" isDisabled={!privacyAgreement || loading}>
+              {loading ? "SENDING..." : "SEND"}
             </Button>
           </div>
         </form>
+        {response && <p className="text-center mt-12 text-lg font-sans">{response}</p>}
       </div>
     </section>
   )
