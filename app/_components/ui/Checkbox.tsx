@@ -26,9 +26,9 @@ const Checkbox = (props: CheckboxProps) => {
         <input {...inputProps} {...focusProps} ref={ref} />
       </VisuallyHidden>
       <motion.svg
-        width="31"
-        height="27"
-        viewBox="0 0 31 27"
+        width="21"
+        height="21"
+        viewBox="0 0 21 21"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
@@ -37,31 +37,31 @@ const Checkbox = (props: CheckboxProps) => {
         className="mr-2"
       >
         <rect
-          x="4.5"
-          y="5.5"
+          x="0.5"
+          y="0.5"
           width="20"
           height="20"
           strokeWidth={3}
           stroke="#8A7259"
           className={`${
             isSelected ? "dark:fill-cream-10 fill-coffee-80/30" : "fill-transparent"
-          } hover:scale-90 origin-center transition-transform duration-200 ease-in-out`}
+          } origin-center transition-transform duration-200 ease-in-out`}
         />
         {isFocusVisible && (
           <rect
             x="4.5"
             y="5.5"
-            width="19"
-            height="19"
+            width="17"
+            height="17"
             strokeWidth={3}
             stroke="#8A7259"
             className={`${
-              isSelected ? "fill-cream-10" : "fill-transparent"
-            } hover:scale-90 origin-center transition-transform duration-200 ease-in-out`}
+              isSelected ? "dark:fill-cream-10 fill-coffee-80/30" : "fill-transparent"
+            } origin-center transition-transform duration-200 ease-in-out`}
           />
         )}
         <motion.path
-          d="M1 9L13.5 20L29 0.5"
+          d="M4 11L10 16.5L18.5 3.5"
           stroke="#8A7259"
           strokeLinecap="round"
           strokeLinejoin="round"
