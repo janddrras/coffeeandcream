@@ -44,7 +44,7 @@ const Checkbox = (props: CheckboxProps) => {
           strokeWidth={3}
           stroke="#8A7259"
           className={`${
-            isSelected ? "dark:fill-cream-10 fill-coffee-80/30" : "fill-transparent"
+            isSelected ? "dark:fill-cream-10 fill-cream-30/50" : "fill-transparent"
           } origin-center transition-transform duration-200 ease-in-out`}
         />
         {isFocusVisible && (
@@ -56,7 +56,7 @@ const Checkbox = (props: CheckboxProps) => {
             strokeWidth={3}
             stroke="#8A7259"
             className={`${
-              isSelected ? "dark:fill-cream-10 fill-coffee-80/30" : "fill-transparent"
+              isSelected ? "dark:fill-cream-10 fill-cream-30/50" : "fill-transparent"
             } origin-center transition-transform duration-200 ease-in-out`}
           />
         )}
@@ -65,7 +65,7 @@ const Checkbox = (props: CheckboxProps) => {
           stroke="#8A7259"
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth={3}
+          strokeWidth={4}
           variants={tickVariants}
           style={{ pathLength, opacity }}
         />

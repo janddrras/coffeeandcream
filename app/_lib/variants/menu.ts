@@ -27,7 +27,6 @@ export const spanVariants: Variants = {
 export const textVariants: Variants = {
   hovered: {
     x: 20,
-    fontWeight: "bold",
     color: "#8A7259",
     scale: 1.1,
     transition: { duration: 0.4, ease: "easeInOut" }

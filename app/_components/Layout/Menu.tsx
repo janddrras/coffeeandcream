@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion, transform, useTransform } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
 import { useAppContext } from "@/app/_components/Providers"
@@ -7,6 +7,7 @@ import menuItems from "@/app/_lib/docs/menuItems.json"
 
 const Menu = () => {
   const { menu, setMenu } = useAppContext()
+
   return (
     <motion.aside
       className="fixed top-0 left-0 w-screen h-screen"
@@ -29,7 +30,10 @@ const Menu = () => {
                     <motion.span className="text-4xl text-cream-30 pb-4 md:pb-0 mr-8 md:mr-14 opacity-0" variants={spanVariants}>
                       <HiOutlineArrowRight />
                     </motion.span>
-                    <motion.p className="text-2xl md:text-4xl font-sans text-cream-20 font-light tracking-wider" variants={textVariants}>
+                    <motion.p
+                      className="text-2xl md:text-4xl font-sans text-cream-20 font-light tracking-wider hover:font-black"
+                      variants={textVariants}
+                    >
                       {item.name}
                     </motion.p>
                   </motion.div>

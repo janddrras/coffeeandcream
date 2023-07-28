@@ -3,7 +3,7 @@ import SectionTitle from "../ui/SectionTitle"
 
 const Welcome = () => {
   return (
-    <section className="bg-cream-30/10 dark:bg-coffee-90/200">
+    <section className="bg-cream-30/10 dark:bg-coffee-90/50">
       <div className="pt-16 pb-32 px-8">
         <SectionTitle>Welcome !</SectionTitle>
         <div className="lg:columns-2 md:gap-16">
