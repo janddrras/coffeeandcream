@@ -2,12 +2,13 @@ import { useToggleState } from "react-stately"
 import { VisuallyHidden, useCheckbox, useFocusRing } from "react-aria"
 import type { AriaCheckboxProps } from "react-aria"
 import { useRef } from "react"
-import { motion, useMotionValue, useTransform } from "framer-motion"
-import { tickVariants } from "@/app/_lib/variants/checkboxVariants"
+import { motion } from "framer-motion"
+import { line1Variants, line2Variants } from "@/app/_lib/variants/checkboxVariants"
 
 interface CheckboxProps extends AriaCheckboxProps {
   children: React.ReactNode
   labelStyles?: string
+  lineColor?: "blue" | "red"
 }
 
 const Checkbox = (props: CheckboxProps) => {
@@ -16,9 +17,6 @@ const Checkbox = (props: CheckboxProps) => {
   let { inputProps } = useCheckbox(props, state, ref)
   let { isFocusVisible, focusProps } = useFocusRing()
   let isSelected = state.isSelected
-
-  const pathLength = useMotionValue(0)
-  const opacity = useTransform(pathLength, [0.05, 0.15], [0, 1])
 
   return (
     <label className={`flex items-center cursor-pointer font-sans ${props.labelStyles}`}>
@@ -61,13 +59,24 @@ const Checkbox = (props: CheckboxProps) => {
           />
         )}
         <motion.path
-          d="M4 11L10 16.5L18.5 3.5"
-          stroke="#8A7259"
+          d="M16 5.5L5 16.5"
+          stroke={`${props.lineColor === "red" ? "#a51111" : "#0d3c5c"}`}
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={4}
-          variants={tickVariants}
-          style={{ pathLength, opacity }}
+          initial="unchecked"
+          variants={line1Variants}
+          animate={isSelected ? "checked" : "unchecked"}
+        />
+        <motion.path
+          d="M16 16.5L5 5.5"
+          stroke={`${props.lineColor === "red" ? "#a51111" : "#0d3c5c"}`}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={4}
+          initial="unchecked"
+          variants={line2Variants}
+          animate={isSelected ? "checked" : "unchecked"}
         />
       </motion.svg>
       {props.children}

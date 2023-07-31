@@ -35,7 +35,7 @@ const ContactForm = () => {
             isRequired
           />
           <div className="flex items-center justify-between gap-8">
-            <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm">
+            <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm" lineColor="red">
               I agree with the privacy statement and to be contacted by Coffeeandcream office
             </Checkbox>
             <Button type="submit" isDisabled={!privacyAgreement || loading}>
