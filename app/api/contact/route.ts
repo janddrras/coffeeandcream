@@ -1,4 +1,4 @@
-import { generateEmail, mailOptions, transporter } from "@/app/_lib/nodemailer"
+import { generateEmail, mailOptions, transporter } from "@/app/api/contact/_lib/nodemailer"
 import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {

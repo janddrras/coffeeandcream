@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion"
 import { menuButtonCircle, menuButtonSpan, menuLine1, menuLine2 } from "@/app/_lib/variants/menuButton"
-import { useAppContext } from "@/app/_components/Providers"
+import { useMenu } from "../providers/MenuProvider"
 
 interface MenuButtonProps {}
 
 const MenuButton = ({}: MenuButtonProps) => {
-  const { menu, setMenu, setSettings } = useAppContext()
+  const { menu, setMenu, setSettings } = useMenu()
   const clickAction = () => {
     setSettings(false)
     setMenu(!menu)

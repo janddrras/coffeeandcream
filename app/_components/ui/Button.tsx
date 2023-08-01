@@ -6,12 +6,15 @@ import { motion } from "framer-motion"
 import { RiMailSendLine } from "react-icons/ri"
 import { backgroundVariants, iconVariants, line1Variants, line2Variants, textVariants } from "@/app/_lib/variants/buttonVariants"
 
-interface ButtonProps extends AriaButtonProps {}
+interface ButtonProps extends AriaButtonProps {
+  icon?: React.ReactNode
+}
 
 const Button = (props: ButtonProps) => {
   let ref = useRef(null)
   let { buttonProps } = useButton(props, ref)
   let { children, isDisabled } = props
+  const { icon } = props
 
   return (
     <button ref={ref} {...buttonProps} className="cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
@@ -22,7 +25,7 @@ const Button = (props: ButtonProps) => {
         whileTap={!isDisabled ? "pressed" : "initial"}
       >
         <motion.span className="absolute text-xl left-4 top-3 z-20 dark:text-cream-20 tracking-wide" variants={iconVariants}>
-          <RiMailSendLine />
+          {icon ? icon : <RiMailSendLine />}
         </motion.span>
         <motion.p className="relative z-20 font-bold font-sans text-lg dark:text-cream-20" variants={textVariants}>
           {children}

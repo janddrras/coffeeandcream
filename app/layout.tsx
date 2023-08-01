@@ -1,10 +1,11 @@
 import "@/app/_lib/globals.css"
 import type { Metadata } from "next"
 import { Inter, Abhaya_Libre, Comfortaa } from "next/font/google"
-import { AppContextProvider, Theme } from "@/app/_components/Providers"
+import { Theme } from "@/app/_components/providers/ThemeProvider"
 import Footer from "@/app/_components/Layout/Footer"
 import Header from "@/app/_components/Layout/Header"
 import Container from "./_components/ui/Container"
+import { MenuProvider } from "./_components/providers/MenuProvider"
 
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" })
 const abhaya = Abhaya_Libre({ subsets: ["latin"], display: "swap", weight: ["800"], variable: "--font-abhaya" })
@@ -25,9 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${inter.variable} ${abhaya.variable} ${comfortaa.variable} bg-cream-10 text-coffee-80 dark:bg-coffee-100 dark:text-cream-10 scroll-smooth`}
       >
         <Theme>
-          <AppContextProvider>
+          <MenuProvider>
             <Header />
-          </AppContextProvider>
+          </MenuProvider>
           <main className="relative">
             <Container stain={true}>{children}</Container>
           </main>

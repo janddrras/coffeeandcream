@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer"
-import { ContactForm } from "./api"
+import type { ContactForm } from "./sendContactForm"
 
 export const transporter = nodemailer.createTransport({
   host: "smtp.hostinger.com",
@@ -19,7 +19,11 @@ export const mailOptions = {
 export const generateEmail = (data: ContactForm) => {
   return `
 		<h1>You have a new message from ${data.name}</h1>
+    <br />
 		<p>${data.message}</p>
+    <br />
 		<p>Reply to: ${data.email}</p>
+    <hr />
+		<p>Interested for ${data.selectedItemsString}</p>
 	`
 }

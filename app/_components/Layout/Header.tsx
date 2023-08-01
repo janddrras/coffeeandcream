@@ -8,10 +8,10 @@ import { logoInner } from "@/app/_lib/variants/logo"
 import MenuButton from "@/app/_components/ui/MenuButton"
 import Menu from "@/app/_components/Layout/Menu"
 import Settings from "@/app/_components/Layout/Settings"
-import { useAppContext } from "@/app/_components/Providers"
+import { useMenu } from "../providers/MenuProvider"
 
 const Header = () => {
-  const { settings, setSettings } = useAppContext()
+  const { settings, setSettings } = useMenu()
 
   return (
     <header className="fixed h-52 w-full z-40 pt-12">

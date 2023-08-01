@@ -2,6 +2,7 @@ export interface ContactForm {
   name: string
   email: string
   message: string
+  selectedItemsString: string
 }
 
 export const sendContactForm = async (data: ContactForm) =>

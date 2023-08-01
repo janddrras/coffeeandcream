@@ -1,12 +1,12 @@
 import { motion, transform, useTransform } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
-import { useAppContext } from "@/app/_components/Providers"
 import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "@/app/_lib/variants/menu"
 import menuItems from "@/app/_lib/docs/menuItems.json"
+import { useMenu } from "../providers/MenuProvider"
 
 const Menu = () => {
-  const { menu, setMenu } = useAppContext()
+  const { menu, setMenu } = useMenu()
 
   return (
     <motion.aside
