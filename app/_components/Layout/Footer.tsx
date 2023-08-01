@@ -1,4 +1,5 @@
 import Container from "@/app/_components/ui/Container"
+import Link from "next/link"
 import { ImFacebook2, ImGithub, ImLinkedin } from "react-icons/im"
 
 const Footer = () => {
@@ -53,13 +54,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center ">
             <p className="inline-block text-cream-30">Copyright © Coffeeandcream srl - {new Date().getFullYear()}</p>
             <div className="flex items-end leading-10">
-              <a href="/" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
+              <Link href="/gdpr" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
                 Privacy Policy
-              </a>
+              </Link>
               <p className="mx-2"> | </p>
-              <a href="/" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
+              <Link href="/terms" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
                 Terms of Hire
-              </a>
+              </Link>
             </div>
           </div>
         </Container>
