@@ -9,8 +9,9 @@ import MenuButton from "../../_components/ui/MenuButton"
 import Menu from "../../_components/Layout/Menu"
 import Settings from "../../_components/Layout/Settings"
 import { useMenu } from "../providers/MenuProvider"
+import type { LayoutDictionaryType } from "../../_lib/dictionaries/getLayoutDictionary"
 
-const Header = () => {
+const Header = ({ dictionary }: { dictionary: LayoutDictionaryType }) => {
   const { settings, setSettings } = useMenu()
 
   return (

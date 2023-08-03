@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "settings": "Beállítások",
+    "theme": "Téma",
+    "language": "Nyelv"
+  },
+  "menu": {
+    "menu": "menü",
+    "menu-items": [
+      {
+        "id": 1,
+        "name": "Főoldal",
+        "url": "/hu"
+      },
+      {
+        "id": 2,
+        "name": "Rólam",
+        "url": "/hu/about"
+      },
+      {
+        "id": 3,
+        "name": "Kapcsolat",
+        "url": "/hu/contact"
+      }
+    ]
+  },
+  "footer": {
+    "mail": "Itt üzenhetsz:",
+    "social": "Itt követhetsz:",
+    "links": {
+      "gdpr": "Adatvédelmi irányelvek",
+      "terms": "Feltételek"
+    }
+  },
+  "404": ["Sajnos ez az oldal nem létezik!", "Vissza a főoldalra"]
+}

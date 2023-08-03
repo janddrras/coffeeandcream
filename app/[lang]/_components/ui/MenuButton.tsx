@@ -3,10 +3,12 @@
 import { motion } from "framer-motion"
 import { menuButtonCircle, menuButtonSpan, menuLine1, menuLine2 } from "../../_lib/variants/menuButton"
 import { useMenu } from "../providers/MenuProvider"
+import { useDictionary } from "../providers/LangProvider"
 
 interface MenuButtonProps {}
 
 const MenuButton = ({}: MenuButtonProps) => {
+  const dict = useDictionary()
   const { menu, setMenu, setSettings } = useMenu()
   const clickAction = () => {
     setSettings(false)
@@ -46,7 +48,7 @@ const MenuButton = ({}: MenuButtonProps) => {
       </svg>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden">
         <motion.span className="font-sans text-xs block" variants={menuButtonSpan}>
-          menu
+          {dict.layout.menu.menu}
         </motion.span>
       </div>
     </motion.button>

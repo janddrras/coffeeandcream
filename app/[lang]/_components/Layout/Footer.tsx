@@ -1,15 +1,16 @@
 import Container from "../../_components/ui/Container"
 import Link from "next/link"
 import { ImFacebook2, ImGithub, ImLinkedin } from "react-icons/im"
+import type { LayoutDictionaryType } from "../../_lib/dictionaries/getLayoutDictionary"
 
-const Footer = () => {
+const Footer = ({ dictionary }: { dictionary: LayoutDictionaryType }) => {
   return (
     <footer>
       <div className="bg-cream-30 text-coffee-80 font-sans py-20">
         <Container border={false}>
           <div className="flex flex-col md:flex-row justify-between items-center ">
             <div className="text-center md:text-left">
-              <p className="text-sm mb-6">Contact me at:</p>
+              <p className="text-sm mb-6">{dictionary.footer.mail}</p>
               <a
                 href="mailto:office@coffeeandcream.net"
                 className="text-lg font-bold underline hover:text-cream-10  transition-colors duration-300 ease-in-out"
@@ -18,7 +19,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="mt-8 md:mt-0">
-              <p className="text-sm mb-6 text-center md:text-right">Follow me at:</p>
+              <p className="text-sm mb-6 text-center md:text-right">{dictionary.footer.social}</p>
               <div className="flex items-center md:items-end">
                 <a
                   href="https://www.facebook.com/coffeeandcream.net"
@@ -55,11 +56,11 @@ const Footer = () => {
             <p className="inline-block text-cream-30">Copyright © Coffeeandcream srl - {new Date().getFullYear()}</p>
             <div className="flex items-end leading-10">
               <Link href="/gdpr" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
-                Privacy Policy
+                {dictionary.footer.links.gdpr}
               </Link>
               <p className="mx-2"> | </p>
               <Link href="/terms" className="hover:text-cream-20 hover:underline transition-all duration-300 ease-in-out">
-                Terms of Hire
+                {dictionary.footer.links.terms}
               </Link>
             </div>
           </div>

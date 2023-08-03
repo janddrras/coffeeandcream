@@ -41,7 +41,7 @@ export function middleware(request: NextRequest) {
       "/images/stain.svg",
       "/images/web.jpg",
 
-      "/flags/gb.svg",
+      "/flags/en.svg",
       "/flags/hu.svg",
       "/flags/ro.svg"
     ].includes(pathname)

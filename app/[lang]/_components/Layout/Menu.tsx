@@ -1,12 +1,15 @@
+"use client"
+
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
 import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "../../_lib/variants/menu"
-import menuItems from "../../_lib/docs/menuItems.json"
 import { useMenu } from "../providers/MenuProvider"
+import { useDictionary } from "../providers/LangProvider"
 
 const Menu = () => {
   const { menu, setMenu } = useMenu()
+  const { layout } = useDictionary()
 
   return (
     <motion.aside
@@ -23,7 +26,7 @@ const Menu = () => {
             animate={menu ? "open" : "closed"}
             variants={listVariants}
           >
-            {menuItems.map((item, idx) => (
+            {layout.menu["menu-items"].map((item) => (
               <Link href={item.url} key={item.id}>
                 <motion.li className="py-24 md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
                   <motion.div className="w-full flex flex-col md:flex-row items-start" whileHover="hovered">

@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "menu": {
+    "menu": "menu",
+    "menu-items": [
+      {
+        "id": 1,
+        "name": "Home",
+        "url": "/en"
+      },
+      {
+        "id": 2,
+        "name": "About Me",
+        "url": "/en/about"
+      },
+      {
+        "id": 3,
+        "name": "Contact Me",
+        "url": "/en/contact"
+      }
+    ]
+  },
+  "footer": {
+    "mail": "Contact me at:",
+    "social": "Follow me on:",
+    "links": {
+      "gdpr": "Privacy Policy",
+      "terms": "Terms of Hire"
+    }
+  },
+  "404": ["Sorry, this page does not exist!", "Let's go back to the homepage"]
+}

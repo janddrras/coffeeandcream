@@ -1,5 +1,3 @@
-"use client"
-
 import Intro from "./_components/Intro"
 import Hero from "./_components/HomePage/Hero"
 import Welcome from "./_components/HomePage/Welcome"

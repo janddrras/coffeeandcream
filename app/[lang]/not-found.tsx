@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link"
-import PageTitle from "./_components/ui/PageTitle"
 
 const NotFound = () => {
   return (

@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "settings": "Setări",
+    "theme": "Tema",
+    "language": "Limba"
+  },
+  "menu": {
+    "menu": "meniu",
+    "menu-items": [
+      {
+        "id": 1,
+        "name": "Acasă",
+        "url": "/ro"
+      },
+      {
+        "id": 2,
+        "name": "Despre mine",
+        "url": "/ro/about"
+      },
+      {
+        "id": 3,
+        "name": "Contact",
+        "url": "/ro/contact"
+      }
+    ]
+  },
+  "footer": {
+    "mail": "Mă puteți contacta la:",
+    "social": "Mă puteți urmări pe:",
+    "links": {
+      "gdpr": "Politica de confidențialitate",
+      "terms": "Termeni de angajare"
+    }
+  },
+  "404": ["Ne pare rău, această pagină nu există!", "Înapoi la pagina principală"]
+}
