@@ -1,0 +1,81 @@
+{
+  "title": "Terms of Hire",
+  "subtitle": [
+    "These terms of hire apply to all work undertaken by Coffeeandcream.",
+    "By giving authorisation to proceed with a job, you are consenting to these terms."
+  ],
+  "footer": "The invalidity or unenforceability of any provisions of this Agreement shall not affect the validity or enforceability of any other provision of this Agreement, which shall remain in full force and Effect.",
+  "content": [
+    {
+      "title": "Payment Terms",
+      "text": [
+        "A 50% deposit is payable in advance of work commencing. The balance on completion is to be paid 14 days of the invoice date. For larger projects, I may request a larger deposit or a staged payment schedule. Should this be the case though I will agree on this with you prior to commencement of my work.",
+        "Completion is deemed to be when the site is feature complete and not necessarily when it is content complete. It is your responsibility to ensure that all content, logins and other material requested in order to complete the job is delivered to me on time.",
+        "If the 14 days payment terms are missed, then I may withhold work or suspend services as I see fit. Intellectual property rights will also not be transferred, and any code, graphics, or other materials already supplied will be withdrawn.",
+        "In the event that I am unable to deliver a completed site due to unreasonable delays in obtaining what I need from you, then I reserve the right to invoice in full prior to site completion or request an interim payment."
+      ]
+    },
+    {
+      "title": "Project Scope And Design Sign-Off",
+      "text": [
+        "It is your responsibility to ensure that your brief contains full details of the project requirements prior to obtaining a quote from me. Failure to do so could lead to unexpected additional time and cost requirements.",
+        "It is strongly recommended that you give me the sight of your designs or mockups prior to commencing the project. This will help avoid unpleasant situations where I will have to reject your mockups due to the fact that I have already developed the layout.",
+        "It is your responsibility to provide your designs and assets prior to instructing me to start the development. After the sign-off, you can no longer make amendments other than minor changes to the design."
+      ]
+    },
+    {
+      "title": "Amendments To Agreed Project Scope",
+      "text": [
+        "Any changes to the project scope after the work has been quoted for will be subject to a revised quote for the additional work. It will also require additional time to be scheduled, which could delay delivery of the project.",
+        "Additional work may be invoiced separately to the original project scope.",
+        "Requests for additional work will not delay how or when I invoice for the original project scope."
+      ]
+    },
+    {
+      "title": "Sign-Off And Amends To Websites Before Publication",
+      "text": [
+        "By leaving the agreed 50% deposit, you will be confirming that I can start the build.",
+        "I will only accept three rounds of amendments, related to three drafts that I will provide, within the agreed project costs prior to publication. Any additional time or work beyond this would be subject to clause 3 of these terms. It is therefore recommended that you gather all amendment requests into a single concise email."
+      ]
+    },
+    {
+      "title": "Intellectual Property Rights",
+      "text": [
+        "All work delivered as part of this contract will become the property of the hirer upon receipt of full payment of all invoices. Until that time ownership of all code, graphics and other materials produced by me remain with myself.",
+        "Property rights do not include the source code of any third-party softwares and plugins used as part of the work."
+      ]
+    },
+    {
+      "title": "Termination Of Contract",
+      "text": [
+        "Either party may cancel the contract at any time. I would only ever invoke this clause though in the rare circumstance that an unresolvable dispute arises.",
+        "Upon termination, by either party, I will raise an invoice for all work that has been produced up to the final day of the contract. All code, graphics and other materials produced up to that time will then be transferred to you in line with the Intellectual Property Right clause above."
+      ]
+    },
+    {
+      "title": "Confidentiality Of Information",
+      "text": ["Both parties agree not to disclose confidential information provided in advance of, or during the course of, the contract."]
+    },
+    {
+      "title": "Quality Assurance",
+      "text": [
+        "Should defects in any of my work be discovered after the contract ends, I agree to rectify it free of charge within 30 days. This guarantee expires 30 days after the completion of the contract and excludes any of my work which has been subsequently modified by another party, and any third-party components used as part of the original contract."
+      ]
+    },
+    {
+      "title": "Temporary Website Hosting",
+      "text": [
+        "When developing a new website, I may choose to provide temporary hosting for the site for the duration of the build. This can be withdrawn at any time without notice. If you prefer to host the website on your own servers, you will need to provide necessary logins details and credentials before sign-off.",
+        "If you wish to extend this temporary hosting after the build is completed, for example, if you are still sourcing content, then you can request this. However, I may choose to charge a fee for this."
+      ]
+    },
+    {
+      "title": "Data Collection",
+      "text": [
+        "If the project requirements include collection and storage of personal data, then it is the responsibility of the website owner to be aware of what data is collected, how it is stored, how to remove it and their legal obligations for data protection. I will offer advice in terms of good practice and implementation, but you accept that it is not my responsibility to manage or process any data collected on the website.",
+        "For marketing purposes, I reserve the right to be able to promote my personal involvement in the project during and after its completion. This may occur via social media channels.",
+        "I do recognise that this may not always be appropriate, so if you have any objections to this, please consult with me prior to the end of the contract."
+      ]
+    }
+  ]
+}

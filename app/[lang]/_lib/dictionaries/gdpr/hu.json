@@ -1,0 +1,46 @@
+{
+  "title": "Adatvédelmi Irányelvek",
+  "subtitle": "Ezen Adatvédelmi Irányelvek részletezik a coffeeandcream.net weboldal által a felhasználóktól gyűjtött személyes adatok típusait és azt, hogy hogyan használom és védelem azokat az információkat.",
+  "content": [
+    {
+      "title": "Milyen Információkat Gyűjtök",
+      "text": "Azáltal, hogy szolgáltatásaimat nyújtom, a felhasználóktól az alábbi típusú személyes adatokat gyűjthetem: - Kapcsolattartási információk, mint például név, email cím, telefonszám és postai cím. - Fizetési információk, mint például hitelkártyaszámok, számlázási címek és egyéb fizetési részletek. - Információk a weboldalam használatáról, beleértve az IP címet, böngésző típusát és eszköz típusát. - Egyéb információkat, amit Ön választ megadni nekem, például visszajelzés, értékelések vagy hozzászólások."
+    },
+    {
+      "title": "Információk Felhasználása",
+      "text": "Személyes információit azért használom, hogy szolgáltatásaimat nyújtsam és javítsam, hogy kapcsolatban legyek Önnel a fiókjával és szolgáltatásaimmal kapcsolatban, és hogy személyre szabjam az élményét a weboldalamon. Kifejezetten az alábbi célokra használhatom az információkat:",
+      "list": [
+        "Fizetések feldolgozása és tranzakciók teljesítése.",
+        "Támogatást nyújtás és válaszadás az érdeklődésekre.",
+        "Személyre szabott élmény nyújtása a weboldalamon.",
+        "Promóciós üzenetek és marketing kommunikációk küldése.",
+        "Weboldalam és szolgáltatásaim fejlesztése."
+      ]
+    },
+    {
+      "title": "Információk Védelme",
+      "text": "Személyes információi védelmét komolyan veszem, és ésszerű intézkedéseket teszek annak védelme érdekében, hogy azokhoz illetéktelen hozzáférést, nyilvánosságra hozatalt vagy visszaélését megakadályozzam. Az iparág által elfogadott biztonsági technológiákat és eljárásokat használom az információi védelméhez."
+    },
+    {
+      "title": "Információk Megosztása",
+      "text": "Nem értékesítem vagy bérbe adom személyes információit harmadik feleknek. Azonban megoszthatom az információit olyan harmadik fél szolgáltatókkal, akik segítenek nekem szolgáltatásaim nyújtásában, mint például a fizetési feldolgozók, a hosting szolgáltatók és az email szolgáltatók. Csak a szolgáltatások nyújtásához szükséges minimális mennyiségű információt osztom meg velük, és kötelezem ezeket a szolgáltatókat az információi bizalmas kezelésére."
+    },
+    {
+      "title": "Cookie-k Használata",
+      "text": "Cookie-kat és hasonló technológiákat használok szolgáltatásaim nyújtásához és javításához, weboldalam használatának elemzéséhez és a beállítások megjegyzéséhez. A cookie-k letiltására van lehetőség a böngésző beállításaiban, de ha ezt megteszi, az weboldalam egyes részei nem működhetnek megfelelően."
+    },
+    {
+      "title": "Az Ön Választása",
+      "text": "Bármikor jogában áll hozzáférni, helyesbíteni vagy törölni személyes információit. Ezt közvetlenül kapcsolatba lépve velem teheti meg."
+    },
+    {
+      "title": "Az Irányelvek Módosítása",
+      "text": "Időről időre frissíthetem az Adatvédelmi Irányelveket, hogy az én gyakorlatom vagy egyéb üzemeltetési, jogi vagy szabályozási okok miatt történő változásokat tükrözzem. Az anyagváltozásokról értesíteni fogom Önt az aktualizált irányelvek közzétételével a weboldalamon vagy email küldés útján."
+    },
+    {
+      "title": "Kapcsolat",
+      "text": "Ha bármilyen kérdése vagy aggodalma van az Adatvédelmi Irányelvekkel kapcsolatban, kérjük, lépjen kapcsolatba velem:",
+      "email": "office@coffeeandcream.net"
+    }
+  ]
+}
