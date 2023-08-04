@@ -7,7 +7,14 @@
     "title": "Trimite-mi un mesaj",
     "text-inputs": ["Nume sau Companie", "Adresă de email", "Mesajul tău"],
     "checkbox": "Sunt de acord cu declarația de confidențialitate și consimt să fiu contactat de biroul Coffeeandcream",
-    "button": ["TRIMITE", "SE TRIMITE"]
+    "button": ["TRIMITE", "SE TRIMITE"],
+    "messages": {
+      "no-name": "Vă rugăm să introduceți numele dvs. sau numele companiei.",
+      "no-email": "Vă rugăm să introduceți adresa dvs. de email.",
+      "no-message": "Trimiterea unui mesaj gol nu are niciun sens!",
+      "success": "Vă mulțumesc pentru mesajul dvs. Voi reveni la dvs. cât mai curând posibil.",
+      "error": "Ceva nu a mers bine. Vă rugăm să încercați din nou."
+    }
   },
   "prices": {
     "title": "Sunt interesat de (opțional):",

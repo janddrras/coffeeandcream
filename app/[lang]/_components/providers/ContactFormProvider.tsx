@@ -2,6 +2,7 @@
 
 import { sendContactForm } from "../../api/contact/_lib/sendContactForm"
 import { SetStateAction, createContext, useState, useEffect, useContext } from "react"
+import { useDictionary } from "./LangProvider"
 
 interface ContactFormContextProps {
   name: string
@@ -46,6 +47,8 @@ const defaultFormValue = {
 const ContactFormContext = createContext<ContactFormContextProps>(defaultFormValue)
 
 export const ContactFormContextProvider = ({ children }: { children: React.ReactNode }) => {
+  const dict = useDictionary()
+
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
@@ -66,18 +69,18 @@ export const ContactFormContextProvider = ({ children }: { children: React.React
 
   const validateForm = ({ name, email, message }: { name: string; email: string; message: string }): boolean => {
     if (name.length < 2) {
-      setError((prev) => ({ ...prev, nameErrorMessage: "Please enter your name, company name or an alias" }))
+      setError((prev) => ({ ...prev, nameErrorMessage: `${dict.contactPage.form.messages["no-name"]}` }))
       setTimeout(() => setError((prev) => ({ ...prev, nameErrorMessage: "" })), 8000)
       return false
     }
 
     if (!isValidEmail(email)) {
-      setError((prev) => ({ ...prev, emailErrorMessage: "Please provide a valid email" }))
+      setError((prev) => ({ ...prev, emailErrorMessage: `${dict.contactPage.form.messages["no-email"]}` }))
       setTimeout(() => setError((prev) => ({ ...prev, emailErrorMessage: "" })), 8000)
       return false
     }
     if (message.length < 6) {
-      setError((prev) => ({ ...prev, messageErrorMessage: "Sending an empty message doesn't make any sense!" }))
+      setError((prev) => ({ ...prev, messageErrorMessage: `${dict.contactPage.form.messages["no-message"]}` }))
       setTimeout(() => setError((prev) => ({ ...prev, messageErrorMessage: "" })), 8000)
       return false
     }
@@ -99,11 +102,11 @@ export const ContactFormContextProvider = ({ children }: { children: React.React
       setEmail("")
       setMessage("")
       setSelectedItems([])
-      setResponse("Thank you for your message! I'll get back to you as soon as possible.")
+      setResponse(`${dict.contactPage.form.messages.success}`)
     } catch (error) {
       console.log(error)
       setLoading(false)
-      setResponse("Something went wrong. Please try again later.")
+      setResponse(`${dict.contactPage.form.messages.error}`)
     }
   }
 

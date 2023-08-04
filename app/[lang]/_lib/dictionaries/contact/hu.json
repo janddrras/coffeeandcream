@@ -7,7 +7,14 @@
     "title": "Küldj egy üzenetet!",
     "text-inputs": ["Név vagy Cég", "Email cím", "Az üzeneted"],
     "checkbox": "Egyetértek az adatvédelmi nyilatkozattal, és hozzájárulok, hogy a Coffeeandcream irodával felvegyék velem a kapcsolatot",
-    "button": ["KULDES", "FOLYAMATBAN..."]
+    "button": ["KULDES", "FOLYAMATBAN..."],
+    "messages": {
+      "no-name": "Kérjük, adja meg a nevét vagy cége nevét.",
+      "no-email": "Kérjük, adja meg az email címét.",
+      "no-message": "Üres üzenet küldése értelmetlen!",
+      "success": "Köszönjük az üzenetét. Amint lehetséges, válaszolni fogok Önnek.",
+      "error": "Hiba történt. Kérjük, próbálja újra."
+    }
   },
   "prices": {
     "title": "Érdekel (opcionális):",

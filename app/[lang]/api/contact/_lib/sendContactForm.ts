@@ -6,7 +6,7 @@ export interface ContactForm {
 }
 
 export const sendContactForm = async (data: ContactForm) =>
-  fetch("/api/contact", {
+  fetch("/en/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -7,7 +7,14 @@
     "title": "Send Me a Message",
     "text-inputs": ["Name or Company", "Email Address", "Your Message"],
     "checkbox": "I agree with the privacy statement and to be contacted by Coffeeandcream office",
-    "button": ["send", "sending ..."]
+    "button": ["send", "sending ..."],
+    "messages": {
+      "no-name": "Please enter your name or company name.",
+      "no-email": "Please enter your email address.",
+      "no-message": "Sending an empty message doesn't make any sense!",
+      "success": "Thank you for your message. I will get back to you as soon as possible.",
+      "error": "Something went wrong. Please try again."
+    }
   },
   "prices": {
     "title": "I'm Interested in (optional):",
