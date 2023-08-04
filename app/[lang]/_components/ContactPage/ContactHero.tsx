@@ -6,22 +6,23 @@ import PageTitle from "../../_components/ui/PageTitle"
 import { motion } from "framer-motion"
 import { circleVariants, lineVariants } from "../../_lib/variants/hero"
 import useMeasure from "react-use-measure"
+import { useDictionary } from "../providers/LangProvider"
 
 const ContactHero = () => {
   let [ref, { width }] = useMeasure()
   let circle = width > 1100 ? width - width / 3 : width - width / 4
+
+  const dict = useDictionary()
 
   return (
     <section className="relative" ref={ref}>
       <div className="relative w-full pt-64 lg:pb-32 pb-96 px-8">
         <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-8">
           <div className="w-full lg:w-1/2 xl:w-full">
-            <PageTitle>Contact</PageTitle>
+            <PageTitle>{dict.contactPage.hero.title}</PageTitle>
             <motion.hr className="opacity-25 mt-8 origin-left" variants={lineVariants} initial="initial" animate="animate" />
 
-            <p className="font-sans text-lg tracking-wide font-light py-8">
-              Let’s have a virtual coffee and tell me about you and your business.
-            </p>
+            <p className="font-sans text-lg tracking-wide font-light py-8">{dict.contactPage.hero.subtitle}</p>
           </div>
           <div className="hidden md:block relative max-w-max  z-10">
             <img src="/images/coffee.png" alt="Cup of cappuccino" className="cover relative z-10 xl:scale-150" />

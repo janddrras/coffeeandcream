@@ -5,12 +5,14 @@ import { useState } from "react"
 import Checkbox from "../ui/Checkbox"
 import type { Price } from "./ContactForm"
 import { useContactFormContext } from "../providers/ContactFormProvider"
+import { useDictionary } from "../providers/LangProvider"
 
 interface PriceCalculatorProps {
   priceList: Price[]
 }
 
 const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
+  const dict = useDictionary()
   const [price, setPrice] = useState(0)
   const defaultSelected = new Array(priceList.length).fill(false)
   const [selected, setSelected] = useState(defaultSelected)
@@ -30,11 +32,13 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
   return (
     <section id="price-calculator" className="bg-cream-30/10 px-2 md:px-8 pb-24 pt-12">
       <form>
-        <h3 className="font-sans text-lg font-bold">I'm interested in (optional):</h3>
+        <h3 className="font-sans text-lg font-bold">{dict.contactPage.prices.title}</h3>
         <div className="flex flex-col md:flex-row mt-8">
           <div className="flex flex-col items-start gap-4 px-4 w-1/2">
-            <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">Development</h4>
-            {priceList
+            <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">
+              {dict.contactPage.prices.subtitles[0]}
+            </h4>
+            {dict.contactPage.prices.items
               .filter((price) => price.category === "development")
               .map((item) => (
                 <Checkbox
@@ -50,8 +54,10 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
               ))}
           </div>
           <div className="flex flex-col items-start gap-4 px-4 w-1/2">
-            <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">Design</h4>
-            {priceList
+            <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">
+              {dict.contactPage.prices.subtitles[1]}
+            </h4>
+            {dict.contactPage.prices.items
               .filter((price) => price.category === "design")
               .map((item) => (
                 <Checkbox
@@ -68,15 +74,14 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
           </div>
         </div>
         <div className="bg-cream-30/10 mt-8 p-8">
-          <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-8">Estimated price</h4>
+          <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-8">
+            {dict.contactPage.prices.subtitles[2]}
+          </h4>
           <div className="flex items-center gap-8 mb-8">
             <h5 className="text-2xl  text-coffee-80/60 dark:text-cream-30/80 font-extrabold px-4 w-36 py-4 font-sans bg-cream-10 shadow-inner">
               {price} €
             </h5>
-            <p className="font-sans text-sm w-2/3">
-              The price provided is an estimate and is subject to change based on factors such as the technologies involved, time
-              constraints, and additional services required.
-            </p>
+            <p className="font-sans text-sm w-2/3">{dict.contactPage.prices.caption}</p>
           </div>
         </div>
       </form>

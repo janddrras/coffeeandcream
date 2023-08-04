@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": "despre mine",
+    "text": "Sunt un designer web independent cu peste 20 de ani de experiență în design și peste 5 ani de experiență în programare. De-a lungul carierei mele, am lucrat cu diferiți clienți, de la afaceri mici la corporații mari, oferindu-le servicii de design web de înaltă calitate. Cu cunoștințele mele extinse în design, am reușit să creez site-uri web atractive și ușor de utilizat, care să răspundă nevoilor clienților mei. În plus, experiența mea în programare mi-a permis să personalizez site-urile, făcându-le unice și adaptate nevoilor specifice ale fiecărui client. Sunt pasionat de munca mea și întotdeauna mă străduiesc să livreze rezultate excepționale care să depășească așteptările clienților mei."
+  },
+  "tools": {
+    "title": "unele dintre instrumentele mele favorite",
+    "subtitles": ["pentru programare", "pentru design", "biblioteci și framework-uri", "alte unelte pe care le ador"]
+  }
+}

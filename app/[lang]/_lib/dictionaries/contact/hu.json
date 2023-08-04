@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "kapcsolat",
+    "subtitle": "Igyunk egy virtuális kávét, és mesélj rólad és a vállalkozásodról."
+  },
+  "form": {
+    "title": "Küldj egy üzenetet!",
+    "text-inputs": ["Név vagy Cég", "Email cím", "Az üzeneted"],
+    "checkbox": "Egyetértek az adatvédelmi nyilatkozattal, és hozzájárulok, hogy a Coffeeandcream irodával felvegyék velem a kapcsolatot",
+    "button": ["KULDES", "FOLYAMATBAN..."]
+  },
+  "prices": {
+    "title": "Érdekel (opcionális):",
+    "subtitles": ["Fejlesztés", "Design", "Becsült ár"],
+    "caption": "A megadott ár becslés, és változhat olyan tényezőktől függően, mint a felhasznált technológiák, az időkorlátok és az igényelt további szolgáltatások.",
+    "items": [
+      {
+        "name": "logo",
+        "price": "100",
+        "category": "design",
+        "label": "Logó design"
+      },
+      {
+        "name": "branding",
+        "price": "300",
+        "category": "design",
+        "label": "Branding design"
+      },
+      {
+        "name": "web-design",
+        "price": "600",
+        "category": "design",
+        "label": "Weboldal design"
+      },
+      {
+        "name": "social-ad",
+        "price": "100",
+        "category": "design",
+        "label": "Közösségi média hirdetés"
+      },
+      {
+        "name": "social-page",
+        "price": "100",
+        "category": "design",
+        "label": "Közösségi média oldal"
+      },
+      {
+        "name": "flyer",
+        "price": "300",
+        "category": "design",
+        "label": "Szórólap/brosúra design"
+      },
+      {
+        "name": "catalog",
+        "price": "1000",
+        "category": "design",
+        "label": "Katalógus design"
+      },
+      {
+        "name": "coding",
+        "price": "500",
+        "category": "development",
+        "label": "Design HTML/CSS/Javascript-ben"
+      },
+      {
+        "name": "landing-page",
+        "price": "300",
+        "category": "development",
+        "label": "Landing oldal"
+      },
+      {
+        "name": "static-site",
+        "price": "500",
+        "category": "development",
+        "label": "Statikus/dinamikus oldal"
+      },
+      {
+        "name": "with-crm",
+        "price": "1000",
+        "category": "development",
+        "label": "Oldal CRM-mel"
+      },
+      {
+        "name": "e-commerce",
+        "price": "2000",
+        "category": "development",
+        "label": "E-kereskedelem"
+      },
+      {
+        "name": "web-app",
+        "price": "1000",
+        "category": "development",
+        "label": "Webalkalmazás"
+      }
+    ]
+  }
+}

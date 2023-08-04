@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": "about me",
+    "text": "I am a freelance web designer with over 20 years of experience in design and 5+ years of experience in coding. Throughout my career, I have worked with various clients ranging from small businesses to large corporations, providing them with high-quality web design services. With my extensive knowledge in design, I have been able to create engaging and user-friendly websites that meet the needs of my clients. Additionally, my expertise in coding has allowed me to customize websites, making them unique and tailored to the specific needs of each client. I am passionate about my work and always strive to deliver exceptional results that exceed my client's expectations."
+  },
+  "tools": {
+    "title": "my favorite tools",
+    "subtitles": ["for coding", "for design", "libraries and frameworks", "other tools I love"]
+  }
+}

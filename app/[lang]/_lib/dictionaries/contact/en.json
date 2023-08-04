@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "contact",
+    "subtitle": "Let’s have a virtual coffee and tell me about you and your business."
+  },
+  "form": {
+    "title": "Send Me a Message",
+    "text-inputs": ["Name or Company", "Email Address", "Your Message"],
+    "checkbox": "I agree with the privacy statement and to be contacted by Coffeeandcream office",
+    "button": ["send", "sending ..."]
+  },
+  "prices": {
+    "title": "I'm Interested in (optional):",
+    "subtitles": ["Development", "Design", "Estimated Price"],
+    "caption": "The price provided is an estimate and is subject to change based on factors such as the technologies involved, time constraints, and additional services required.",
+    "items": [
+      {
+        "name": "logo",
+        "price": "100",
+        "category": "design",
+        "label": "Logo design"
+      },
+      {
+        "name": "branding",
+        "price": "300",
+        "category": "design",
+        "label": "Branding design"
+      },
+      {
+        "name": "web-design",
+        "price": "600",
+        "category": "design",
+        "label": "Webpage design"
+      },
+      {
+        "name": "social-ad",
+        "price": "100",
+        "category": "design",
+        "label": "Social media ad"
+      },
+      {
+        "name": "social-page",
+        "price": "100",
+        "category": "design",
+        "label": "Social media page"
+      },
+      {
+        "name": "flyer",
+        "price": "300",
+        "category": "design",
+        "label": "Flyer/Brochure design"
+      },
+      {
+        "name": "catalog",
+        "price": "1000",
+        "category": "design",
+        "label": "Catalog design"
+      },
+      {
+        "name": "coding",
+        "price": "500",
+        "category": "development",
+        "label": "Design to HTML/CSS/Javascript"
+      },
+      {
+        "name": "landing-page",
+        "price": "300",
+        "category": "development",
+        "label": "Landing Page"
+      },
+      {
+        "name": "static-site",
+        "price": "500",
+        "category": "development",
+        "label": "Static/Dinamic site"
+      },
+      {
+        "name": "with-crm",
+        "price": "1000",
+        "category": "development",
+        "label": "Site with CRM"
+      },
+      {
+        "name": "e-commerce",
+        "price": "2000",
+        "category": "development",
+        "label": "E Commerce"
+      },
+      {
+        "name": "web-app",
+        "price": "1000",
+        "category": "development",
+        "label": "Web App"
+      }
+    ]
+  }
+}

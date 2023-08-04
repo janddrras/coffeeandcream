@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "contact",
+    "subtitle": "Hai la o cafea virtuala si povesteste despre proiectul tau."
+  },
+  "form": {
+    "title": "Trimite-mi un mesaj",
+    "text-inputs": ["Nume sau Companie", "Adresă de email", "Mesajul tău"],
+    "checkbox": "Sunt de acord cu declarația de confidențialitate și consimt să fiu contactat de biroul Coffeeandcream",
+    "button": ["TRIMITE", "SE TRIMITE"]
+  },
+  "prices": {
+    "title": "Sunt interesat de (opțional):",
+    "subtitles": ["Dezvoltare", "Design", "Preț estimat"],
+    "caption": "Prețul oferit este o estimare și poate fi modificat în funcție de factori precum tehnologiile implicate, limitele de timp și serviciile suplimentare necesare.",
+    "items": [
+      {
+        "name": "logo",
+        "price": "100",
+        "category": "design",
+        "label": "Design logo"
+      },
+      {
+        "name": "branding",
+        "price": "300",
+        "category": "design",
+        "label": "Design branding"
+      },
+      {
+        "name": "web-design",
+        "price": "600",
+        "category": "design",
+        "label": "Design pagină web"
+      },
+      {
+        "name": "social-ad",
+        "price": "100",
+        "category": "design",
+        "label": "Anunțuri pe rețele sociale"
+      },
+      {
+        "name": "social-page",
+        "price": "100",
+        "category": "design",
+        "label": "Pagină pe rețele sociale"
+      },
+      {
+        "name": "flyer",
+        "price": "300",
+        "category": "design",
+        "label": "Design flyer/brosură"
+      },
+      {
+        "name": "catalog",
+        "price": "1000",
+        "category": "design",
+        "label": "Design catalog"
+      },
+      {
+        "name": "coding",
+        "price": "500",
+        "category": "development",
+        "label": "Design în HTML/CSS/Javascript"
+      },
+      {
+        "name": "landing-page",
+        "price": "300",
+        "category": "development",
+        "label": "Pagină de aterizare"
+      },
+      {
+        "name": "static-site",
+        "price": "500",
+        "category": "development",
+        "label": "Site static/dinamic"
+      },
+      {
+        "name": "with-crm",
+        "price": "1000",
+        "category": "development",
+        "label": "Site cu CRM"
+      },
+      {
+        "name": "e-commerce",
+        "price": "2000",
+        "category": "development",
+        "label": "Comerț electronic"
+      },
+      {
+        "name": "web-app",
+        "price": "1000",
+        "category": "development",
+        "label": "Aplicație web"
+      }
+    ]
+  }
+}
