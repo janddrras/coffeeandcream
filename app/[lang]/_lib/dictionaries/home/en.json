@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "title": ["web", "design", "development"],
+    "subtitle": "Professional web pages at affordable prices."
+  },
+  "welcome": {
+    "title": "welcome!",
+    "text": [
+      "I am a freelance web designer and developer with years of experience providing high-quality services to clients around the world. My services include web design, web development, e-commerce solutions, content management systems, and much more. I use the latest technologies and best practices to ensure that my projects are always up to date and of the highest quality.",
+      "I believe that every business deserves a great website, and I am committed to making that a reality for my clients. Contact me today to learn more about my services and how I can help you take your online presence to the next level. Thank you for considering me for your web design and development needs."
+    ]
+  },
+  "services": {
+    "title": "services",
+    "text": "I offer a variety of services to help your online business succeed. In addition to designing and developing websites I can also help with branding and graphic design to give your business a professional and cohesive look. With my expertise in these areas, I can help you create an online presence that is unique and attracts customers. I can help you choose the right domain name, hosting solutions, and technologies for optimal website performance and cost-effectiveness.",
+    "list": [
+      {
+        "name": "Web",
+        "description": ["Landing page", "Portfolio Site", "Corporate Site", "Web app", "Web Shop", "Blog"],
+        "image": "/images/web.jpg"
+      },
+      {
+        "name": "Development",
+        "description": ["Coding from design", "Web Apps", "CMS", "Animations", "Hosting"],
+        "image": "/images/coding.jpg"
+      },
+      {
+        "name": "Design",
+        "description": ["Web design", "Social media design", "Print Design", "Logo Design", "Branding"],
+        "image": "/images/design.jpg"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "list": [
+      {
+        "id": 1,
+        "question": "How much a website costs?",
+        "answer": "The cost of a website depends on various factors such as the complexity of the project, the features required, and the amount of time and effort involved. I work closely with my clients to establish a budget that works for them, and I strive to provide options, transparent pricing and clear communication throughout the project."
+      },
+      {
+        "id": 2,
+        "question": "How long does a typical project take to complete?",
+        "answer": "The duration of a project can vary depending on the scope and complexity of the project. While a simple website can take several days or weeks, a complex project can take several months. I work efficiently and effectively to ensure that projects are completed in a timely manner without compromising on quality."
+      },
+      {
+        "id": 3,
+        "question": "What is included in every project?",
+        "answer": "Every project includes a comprehensive set of services, including a detailed consultation, wireframing, content creation, design, development, SEO, final testing, and fine tuning. I also offer optional maintenance and support services to ensure that our clients' websites remain up to date and functional over time."
+      },
+      {
+        "id": 4,
+        "question": "Why not wordpress?",
+        "answer": "While WordPress is a popular platform for websites, I consider outdated technology. I believe that every project is unique and requires a customized approach so I use a variety of technologies and platforms to ensure that my clients' websites is tailored to his specific needs and requirements."
+      },
+      {
+        "id": 5,
+        "question": "What if i prefer tea?",
+        "answer": "Whether you prefer coffee or tea, I am committed to provide you with the best possible service and results. Contact me today to learn more about how I can help you achieve your web design and development goals."
+      }
+    ]
+  }
+}

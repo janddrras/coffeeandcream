@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "title": ["web", "design", "development"],
+    "subtitle": "Pagini web profesionale la prețuri accesibile."
+  },
+  "welcome": {
+    "title": "Bun venit!",
+    "text": [
+      "Sunt un designer și dezvoltator web independent cu ani de experiență în furnizarea de servicii de înaltă calitate clienților din întreaga lume. Serviciile mele includ design web, dezvoltare web, soluții de comerț electronic, sisteme de gestionare a conținutului și multe altele. Folosesc cele mai recente tehnologii și cele mai bune practici pentru a mă asigura că proiectele mele sunt mereu actualizate și de cea mai înaltă calitate.",
+      "Cred că fiecare afacere merită un site excelent, și sunt hotărât să fac din asta realitate pentru clienții mei. Contactează-mă azi pentru a afla mai multe despre serviciile mele și cum te pot ajuta să îți duci prezența online la nivelul următor. Îți mulțumesc că mă iei în considerare pentru nevoile tale de design și dezvoltare web."
+    ]
+  },
+  "services": {
+    "title": "servicii",
+    "text": "Ofer o varietate de servicii pentru a-ți ajuta afacerea online să reușească. Pe lângă designul și dezvoltarea de site-uri web, pot ajuta și cu brandingul și designul grafic pentru a oferi afacerii tale un aspect profesional și coerent. Cu expertiza mea în aceste domenii, pot ajuta să creezi o prezență online unică și atrăgătoare pentru clienți. Te pot ajuta să alegi numele de domeniu potrivit, soluțiile de găzduire și tehnologiile pentru performanță optimă și eficiență în costuri.",
+    "list": [
+      {
+        "name": "Web",
+        "description": ["Pagină de aterizare", "Site de portofoliu", "Site corporativ", "Aplicație web", "Magazin online", "Blog"],
+        "image": "/images/web.jpg"
+      },
+      {
+        "name": "Dezvoltare",
+        "description": ["Codificare din design", "Aplicații web", "Sisteme de gestionare a conținutului", "Animații", "Găzduire"],
+        "image": "/images/coding.jpg"
+      },
+      {
+        "name": "Design",
+        "description": ["Design web", "Design pentru social media", "Design pentru imprimare", "Design de logo", "Branding"],
+        "image": "/images/design.jpg"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "list": [
+      {
+        "id": 1,
+        "question": "Cât costă un website?",
+        "answer": "Costul unui website depinde de diferiți factori, precum complexitatea proiectului, funcționalitățile necesare și timpul și efortul implicate. Colaborez strâns cu clienții mei pentru a stabili un buget care să li se potrivească, și mă străduiesc să ofer opțiuni, prețuri transparente și comunicare clară pe tot parcursul proiectului."
+      },
+      {
+        "id": 2,
+        "question": "Cât timp durează un proiect tipic pentru finalizare?",
+        "answer": "Durata unui proiect poate varia în funcție de amploarea și complexitatea acestuia. În timp ce un website simplu poate fi finalizat în câteva zile sau săptămâni, un proiect complex poate dura câteva luni. Lucrez eficient și cu efectivitate pentru a asigura că proiectele sunt finalizate într-un mod prompt, fără a compromite calitatea."
+      },
+      {
+        "id": 3,
+        "question": "Ce este inclus în fiecare proiect?",
+        "answer": "Fiecare proiect include un set cuprinzător de servicii, inclusiv o consultare detaliată, crearea de machete, crearea de conținut, design, dezvoltare, optimizare pentru motoarele de căutare (SEO), teste finale și ajustări. De asemenea, ofer servicii opționale de mentenanță și suport pentru a ne asigura că site-urile clienților noștri rămân actualizate și funcționale pe termen lung."
+      },
+      {
+        "id": 4,
+        "question": "De ce nu WordPress?",
+        "answer": "Deși WordPress este o platformă populară pentru website-uri, eu consider că tehnologia sa este învechită. Cred că fiecare proiect este unic și necesită o abordare personalizată, așa că folosesc o varietate de tehnologii și platforme pentru a ne asigura că website-urile clienților mei sunt adaptate nevoilor și cerințelor lor specifice."
+      },
+      {
+        "id": 5,
+        "question": "Ce fac dacă prefer ceaiul?",
+        "answer": "Indiferent dacă preferi cafeaua sau ceaiul, sunt hotărât să îți ofer cea mai bună calitate a serviciilor și rezultate. Contactează-mă azi pentru a afla mai multe despre cum te pot ajuta să îți atingi obiectivele de design și dezvoltare web."
+      }
+    ]
+  }
+}
