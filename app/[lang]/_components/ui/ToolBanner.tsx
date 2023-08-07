@@ -25,9 +25,13 @@ const ToolBanner = ({ serie, direction = 1 }: ToolBannerProps) => {
   }
 
   return (
-    <div className="py-6 overflow-hidden">
+    <div className="py-2 md:py-6 overflow-hidden">
       <motion.div className="flex" animate={direction === 1 ? "toRight" : "toLeft"} variants={variants}>
-        <h4 className="font-sans text-6xl font-black uppercase" ref={ref} style={{ transform: "translateX: -100%" }}>
+        <h4
+          className="font-sans text-2xl sm:text-4xl md:text-6xl font-black uppercase"
+          ref={ref}
+          style={{ transform: "translateX: -100%" }}
+        >
           {serie.map((tool, idx) => (
             <span
               className={`${
@@ -39,7 +43,7 @@ const ToolBanner = ({ serie, direction = 1 }: ToolBannerProps) => {
             </span>
           ))}
         </h4>
-        <h4 className="font-sans text-6xl font-black uppercase" ref={ref}>
+        <h4 className="font-sans text-2xl sm:text-4xl md:text-6xl font-black uppercase" ref={ref}>
           {serie.map((tool, idx) => (
             <span
               className={`${

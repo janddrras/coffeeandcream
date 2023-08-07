@@ -1,13 +1,13 @@
 "use client"
 
 import PriceCalculator from "./PriceCalculator"
-import SectionTitle from "@/app/[lang]/_components/ui/SectionTitle"
-import prices from "@/app/[lang]/_lib/docs/prices.json"
+import SectionTitle from "../../_components/ui/SectionTitle"
+import prices from "../../_lib/dictionaries/contact/en.json"
 import { ContactFormContextProvider } from "../providers/ContactFormProvider"
 import Form from "./Form"
 import { useDictionary } from "../providers/LangProvider"
 
-export type Price = (typeof prices)[0]
+export type Price = (typeof prices.prices.items)[0]
 
 const ContactForm = () => {
   const dict = useDictionary()
@@ -19,7 +19,7 @@ const ContactForm = () => {
           <SectionTitle>{dict.contactPage.form.title}</SectionTitle>
           <Form />
         </div>
-        <PriceCalculator priceList={prices} />
+        <PriceCalculator priceList={dict.contactPage.prices.items} />
       </section>
     </ContactFormContextProvider>
   )

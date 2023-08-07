@@ -9,17 +9,18 @@ import MenuButton from "../../_components/ui/MenuButton"
 import Menu from "../../_components/Layout/Menu"
 import Settings from "../../_components/Layout/Settings"
 import { useMenu } from "../providers/MenuProvider"
-import type { LayoutDictionaryType } from "../../_lib/dictionaries/getLayoutDictionary"
+import { usePathname } from "next/navigation"
 
-const Header = ({ dictionary }: { dictionary: LayoutDictionaryType }) => {
+const Header = () => {
   const { settings, setSettings } = useMenu()
+  const locale = usePathname().split("/")[1]
 
   return (
     <header className="fixed h-52 w-full z-40 pt-12">
       <Container border={false}>
         <div className="flex justify-between items-start">
           <div className="flex items-center gap-5 pl-2">
-            <Link href="/">
+            <Link href={`/${locale}`}>
               <Logo size={60} r={14} strokeWidth={2} variant1={logoInner} whileHover="whileHover" />
             </Link>
             <h3 className="font-logo hidden md:block text-2xl tracking-wider font-light">coffeeandcream</h3>

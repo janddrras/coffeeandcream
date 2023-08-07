@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container = ({ children, border = true, stain = false }: ContainerProps) => {
   return (
-    <div className="max-w-screen-2xl sm:px-24 md:px-32 lg:px-40 mx-auto h-full">
+    <div className="max-w-screen-2xl md:px-20 lg:px-40 mx-auto h-full">
       <div className={`h-full   ${border ? "border-x border-cream-30/25 dark:border-coffee-80 relative" : ""}`}>
         <div className="relative">
           {children}

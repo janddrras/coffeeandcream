@@ -7,7 +7,6 @@ import Header from "./_components/Layout/Header"
 import Container from "./_components/ui/Container"
 import { MenuProvider } from "./_components/providers/MenuProvider"
 import { i18n } from "../../i18n-config"
-import { getLayoutDictionary } from "./_lib/dictionaries/getLayoutDictionary"
 import type { Locale } from "@/i18n-config"
 import { LangProvider } from "./_components/providers/LangProvider"
 
@@ -25,8 +24,6 @@ export const metadata: Metadata = {
 }
 
 export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { lang: Locale } }) {
-  const dictionary = await getLayoutDictionary(params.lang)
-
   return (
     <LangProvider lang={params.lang}>
       <html lang={params.lang} suppressHydrationWarning>
@@ -38,12 +35,12 @@ export default async function RootLayout({ children, params }: { children: React
         >
           <Theme>
             <MenuProvider>
-              <Header dictionary={dictionary} />
+              <Header />
             </MenuProvider>
             <main className="relative">
               <Container stain={true}>{children}</Container>
             </main>
-            <Footer dictionary={dictionary} />
+            <Footer />
           </Theme>
         </body>
       </html>

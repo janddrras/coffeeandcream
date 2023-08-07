@@ -19,16 +19,16 @@ const Menu = () => {
       variants={menuVariant}
       style={{ pointerEvents: menu ? "auto" : "none" }}
     >
-      <motion.div className="bg-black grid place-items-center absolute inset-y-0 left-4 w-full z-30" variants={menuLayer}>
+      <motion.div className="bg-black grid place-items-center absolute inset-y-0 left-8 w-full z-30" variants={menuLayer}>
         <nav>
           <motion.ul
-            className="flex flex-col justify-start items-left min-h-screen py-24 md:py-52"
+            className="flex flex-col justify-around py-24 items-left h-screen"
             animate={menu ? "open" : "closed"}
             variants={listVariants}
           >
             {layout.menu["menu-items"].map((item) => (
               <Link href={item.url} key={item.id}>
-                <motion.li className="py-24 md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
+                <motion.li className="md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
                   <motion.div className="w-full flex flex-col md:flex-row items-start" whileHover="hovered">
                     <motion.span className="text-4xl text-cream-30 pb-4 md:pb-0 mr-8 md:mr-14 opacity-0" variants={spanVariants}>
                       <HiOutlineArrowRight />
@@ -45,7 +45,7 @@ const Menu = () => {
             ))}
           </motion.ul>
         </nav>
-        <div className="w-80 absolute bottom-16 left-6 md:left-24 2xl:left-48 z-0 opacity-5">
+        <div className="w-80 absolute bottom-16 left-6 md:left-24 2xl:left-48 z-0 opacity-5 pointer-events-none">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.72 123.21" className="w-full">
             <path
               className="fill-cream-30"
@@ -54,7 +54,7 @@ const Menu = () => {
           </svg>
         </div>
       </motion.div>
-      <motion.div className="w-full inset-y-0 bg-red absolute left-2 z-20" variants={menuLayer} />
+      <motion.div className="w-full inset-y-0 bg-red absolute left-4 z-20" variants={menuLayer} />
       <motion.div className="inset-0 bg-coffee-80 absolute z-10" variants={menuLayer} />
     </motion.aside>
   )
