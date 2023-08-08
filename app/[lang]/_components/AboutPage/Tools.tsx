@@ -12,40 +12,40 @@ const Tools = () => {
   const dict = useDictionary()
 
   return (
-    <section className="bg-cream-30/10 dark:bg-coffee-90/50">
-      <div className="pt-16 md:pb-32 pb-8 px-2 md:px-8">
-        <SectionTitle>{dict.aboutPage.tools.title}</SectionTitle>
-        <div className="grid grid-cols-2 grid-rows-2 gap-8">
-          <section className="mt-8">
+    <section className="bg-cream-30/10 dark:bg-coffee-90/50 pt-16 md:pb-32 pb-8 px-2 md:px-8">
+      <SectionTitle>{dict.aboutPage.tools.title}</SectionTitle>
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-row flex-wrap md:flex-row items-center justify-center gap-4">
+          <section className="mt-16">
             <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[0]}</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-row flex-wrap justify-center gap-4">
               {coding.map((tool) => (
                 <ToolCard key={tool.id} {...tool} />
               ))}
             </div>
           </section>
-          <section className="mt-8">
+          <section className="mt-16">
             <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[1]}</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-row flex-wrap justify-center gap-4">
               {design.map((tool) => (
                 <ToolCard key={tool.id} {...tool} />
               ))}
             </div>
           </section>
-          <section className="mt-16 col-span-2">
-            <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[2]}</h3>
-            <div className="grid grid-cols-4 gap-4">
-              {libraries.map((tool) => (
-                <ToolCard key={tool.id} {...tool} />
-              ))}
-            </div>
-          </section>
-          <section className="mt-16 mb-8 col-span-2 overflow-hidden">
-            <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[3]}</h3>
-            <ToolBanner serie={others} />
-            <ToolBanner serie={othersInverted} direction={-1} />
-          </section>
         </div>
+        <section className="mt-16">
+          <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[2]}</h3>
+          <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
+            {libraries.map((tool) => (
+              <ToolCard key={tool.id} {...tool} />
+            ))}
+          </div>
+        </section>
+        <section className="mt-16 mb-8 col-span-2 overflow-hidden">
+          <h3 className="font-sans font-ligh text-2xl text-center pb-12">{dict.aboutPage.tools.subtitles[3]}</h3>
+          <ToolBanner serie={others} />
+          <ToolBanner serie={othersInverted} direction={-1} />
+        </section>
       </div>
     </section>
   )

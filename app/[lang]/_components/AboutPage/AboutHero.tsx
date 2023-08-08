@@ -16,7 +16,7 @@ const AboutHero = () => {
 
   return (
     <section className="relative" ref={ref}>
-      <div className="relative w-full pt-64 lg:pb-24 pb-96 px-8">
+      <div className="relative w-full pt-64 pb-24 px-8">
         <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-8">
           <div className="w-full">
             <PageTitle>{dict.aboutPage.hero.title}</PageTitle>
