@@ -16,17 +16,17 @@ const ContactHero = () => {
 
   return (
     <section className="relative" ref={ref}>
-      <div className="relative w-full pt-64 lg:pb-32 pb-96 px-8">
-        <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-8">
+      <div className="relative w-full pt-64 lg:pb-32 pb-24 px-8">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
           <div className="w-full lg:w-1/2 xl:w-full">
             <PageTitle>{dict.contactPage.hero.title}</PageTitle>
             <motion.hr className="opacity-25 mt-8 origin-left" variants={lineVariants} initial="initial" animate="animate" />
 
             <p className="font-sans text-lg tracking-wide font-light py-8">{dict.contactPage.hero.subtitle}</p>
           </div>
-          <div className="hidden md:block relative max-w-max  z-10">
+          <div className="relative max-w-max z-10">
             <img src="/images/coffee.png" alt="Cup of cappuccino" className="cover relative z-10 xl:scale-150" />
-            <div className="w-96 h-96 bg-red rounded-full absolute -top-10 right-0"></div>
+            <div className="md:w-96 md:h-96 w-48 h-48 bg-red rounded-full absolute -top-10 right-0"></div>
           </div>
           <svg
             className="hidden lg:block absolute top-10 right-1 w-full z-0 opacity-100 max-w-min origin-center"

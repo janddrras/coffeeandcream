@@ -19,7 +19,7 @@ const FaqCard = ({ id, question, answer, activeId, setActiveId }: FaqCardProps) 
 
   return (
     <article
-      className="w-full p-8 border-2 border-coffee-80/20 dark:border-cream-30/20 shadow-md hover:shadow-sm transition-shadow duration-300 cursor-pointer"
+      className="w-full p-4 md:p-8 border-2 border-coffee-80/20 dark:border-cream-30/20 shadow-md hover:shadow-sm transition-shadow duration-300 cursor-pointer"
       onClick={() => toggleActive(id)}
     >
       <div className="flex justify-between gap-4 items-center">

@@ -32,7 +32,7 @@ const Checkbox = (props: CheckboxProps) => {
         aria-hidden="true"
         initial={false}
         animate={isSelected ? "checked" : "unchecked"}
-        className="mr-2"
+        className="mr-2 min-w-[21px] min-h-[21px]"
       >
         <rect
           x="0.5"
@@ -79,7 +79,7 @@ const Checkbox = (props: CheckboxProps) => {
           animate={isSelected ? "checked" : "unchecked"}
         />
       </motion.svg>
-      {props.children}
+      <p className="text-sm pl-4">{props.children}</p>
     </label>
   )
 }

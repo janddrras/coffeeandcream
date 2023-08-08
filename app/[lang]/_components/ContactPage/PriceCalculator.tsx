@@ -34,7 +34,7 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
       <form>
         <h3 className="font-sans text-lg font-bold">{dict.contactPage.prices.title}</h3>
         <div className="flex flex-col md:flex-row mt-8">
-          <div className="flex flex-col items-start gap-4 px-4 w-1/2">
+          <div className="flex flex-col items-start gap-4 px-4 md:w-1/2">
             <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">
               {dict.contactPage.prices.subtitles[0]}
             </h4>
@@ -53,7 +53,7 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
                 </Checkbox>
               ))}
           </div>
-          <div className="flex flex-col items-start gap-4 px-4 w-1/2">
+          <div className="flex flex-col items-start gap-4 px-4 mt-8 md:mt-0 md:w-1/2">
             <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-2">
               {dict.contactPage.prices.subtitles[1]}
             </h4>
@@ -77,11 +77,11 @@ const PriceCalculator = ({ priceList }: PriceCalculatorProps) => {
           <h4 className="font-sans text-lg text-coffee-80/60 dark:text-cream-30/80 font-extrabold pb-8">
             {dict.contactPage.prices.subtitles[2]}
           </h4>
-          <div className="flex items-center gap-8 mb-8">
-            <h5 className="text-2xl  text-coffee-80/60 dark:text-cream-30/80 font-extrabold px-4 w-36 py-4 font-sans bg-cream-10 shadow-inner">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+            <h5 className="text-2xl  text-coffee-80/60 dark:text-cream-30/80 font-extrabold px-4 w-full md:w-36 py-4 font-sans bg-cream-10 shadow-inner">
               {price} €
             </h5>
-            <p className="font-sans text-sm w-2/3">{dict.contactPage.prices.caption}</p>
+            <p className="font-sans text-sm md:w-2/3">{dict.contactPage.prices.caption}</p>
           </div>
         </div>
       </form>

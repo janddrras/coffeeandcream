@@ -19,7 +19,7 @@ const Button = (props: ButtonProps) => {
   return (
     <button ref={ref} {...buttonProps} className="cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
       <motion.div
-        className=" px-12 py-2 relative overflow-hidden"
+        className=" px-16 py-2 relative overflow-hidden"
         initial="initial"
         whileHover={!isDisabled ? "hover" : "initial"}
         whileTap={!isDisabled ? "pressed" : "initial"}

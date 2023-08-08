@@ -40,7 +40,7 @@ const Form = () => {
         errorMessage={error.messageErrorMessage}
         isRequired
       />
-      <div className="flex items-center justify-between gap-8">
+      <div className="flex flex-col items-center justify-between gap-8">
         <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm" lineColor="red">
           {dict.contactPage.form.checkbox}
         </Checkbox>

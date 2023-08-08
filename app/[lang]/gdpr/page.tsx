@@ -9,7 +9,7 @@ const Gdpr = () => {
   const dict = useDictionary()
 
   return (
-    <section className="relative w-full pt-64 lg:pb-24 pb-96 px-2">
+    <section className="relative w-full pt-64 lg:pb-24 pb-24 px-2">
       <div className="py-8">
         <PageTitle>{dict.gdpr.title}</PageTitle>
       </div>
