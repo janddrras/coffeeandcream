@@ -24,10 +24,10 @@ const Button = (props: ButtonProps) => {
         whileHover={!isDisabled ? "hover" : "initial"}
         whileTap={!isDisabled ? "pressed" : "initial"}
       >
-        <motion.span className="absolute text-xl left-4 top-3 z-20 dark:text-cream-20 tracking-wide" variants={iconVariants}>
+        <motion.span className="absolute text-xl left-4 top-3 z-10 dark:text-cream-20 tracking-wide" variants={iconVariants}>
           {icon ? icon : <RiMailSendLine />}
         </motion.span>
-        <motion.p className="relative z-20 font-bold font-sans text-lg dark:text-cream-20" variants={textVariants}>
+        <motion.p className="relative z-10 font-bold font-sans text-lg dark:text-cream-20" variants={textVariants}>
           {children}
         </motion.p>
         <motion.span className="block inset-0 top-0 left-0 bg-cream-30/80 absolute z-0" variants={backgroundVariants} />

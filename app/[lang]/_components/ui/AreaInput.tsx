@@ -33,7 +33,7 @@ const AreaInput = (props: AriaTextFieldProps) => {
       <div className="relative w-full h-full pt-8">
         <label
           {...labelProps}
-          className="absolute z-20 font-sans text-xl left-2 top-12 text-coffee-80/50 dark:text-cream-30/50 pointer-events-none"
+          className="absolute z-10 font-sans text-xl left-2 top-12 text-coffee-80/50 dark:text-cream-30/50 pointer-events-none"
         >
           {labelText.map((letter, index) => (
             <motion.span

@@ -14,12 +14,12 @@ const ServiceCard = ({ name, description, image }: ServiceCardProps) => {
   return (
     <motion.article className="w-64 h-64 bg-cover relative overflow-hidden shadow-lg" whileHover="hover" initial="initial">
       <motion.h3
-        className="absolute mx-auto text-cream-10 font-sans font-black inset-0 text-center pt-4 tracking-wide shadow-sm text-2xl z-30"
+        className="absolute mx-auto text-cream-10 font-sans font-black inset-0 text-center pt-4 tracking-wide shadow-sm text-2xl z-10"
         variants={titleVariants}
       >
         {name}
       </motion.h3>
-      <motion.div className="absolute left-4 top-14 z-20" variants={listVariants}>
+      <motion.div className="absolute left-4 top-14 z-10" variants={listVariants}>
         <ul>
           {description.map((item, index) => (
             <li
@@ -31,7 +31,7 @@ const ServiceCard = ({ name, description, image }: ServiceCardProps) => {
           ))}
         </ul>
       </motion.div>
-      <div className="absolute inset-0 bg-coffee-90/30 z-10" />
+      <div className="absolute inset-0 bg-coffee-90/30 z-0" />
       <motion.img src={image} alt={name} className="absolute inset-0 z-0 object-cover" variants={imgVariants} />
     </motion.article>
   )
