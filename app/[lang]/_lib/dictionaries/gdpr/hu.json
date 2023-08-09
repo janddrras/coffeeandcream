@@ -1,45 +1,51 @@
 {
-  "title": "Adatvédelmi Irányelvek",
-  "subtitle": "Ezen Adatvédelmi Irányelvek részletezik a coffeeandcream.net weboldal által a felhasználóktól gyűjtött személyes adatok típusait és azt, hogy hogyan használom és védelem azokat az információkat.",
+  "title": "Adatvédelmi irányelvek",
+  "subtitle": "Ezen Adatvédelmi irányelvek részletezik a coffeeandcream.net weboldal által a felhasználóktól gyűjtött személyes adatok típusait és azt, hogy hogyan használom és védem ezeket az információkat.",
   "content": [
     {
-      "title": "Milyen Információkat Gyűjtök",
-      "text": "Azáltal, hogy szolgáltatásaimat nyújtom, a felhasználóktól az alábbi típusú személyes adatokat gyűjthetem: - Kapcsolattartási információk, mint például név, email cím, telefonszám és postai cím. - Fizetési információk, mint például hitelkártyaszámok, számlázási címek és egyéb fizetési részletek. - Információk a weboldalam használatáról, beleértve az IP címet, böngésző típusát és eszköz típusát. - Egyéb információkat, amit Ön választ megadni nekem, például visszajelzés, értékelések vagy hozzászólások."
+      "title": "Milyen információkat gyűjtök",
+      "text": "Azáltal, hogy szolgáltatásaimat nyújtom, a felhasználóktól az alábbi típusú személyes adatokat gyűjthetem:",
+      "list": [
+        "Kapcsolattartási információk, mint például név, email cím, telefonszám és postai cím.",
+        "Fizetési információk, mint például hitelkártyaszámok, számlázási címek és egyéb fizetési részletek.",
+        "Információk a weboldalam használatáról, beleértve az IP címet, böngésző típusát és eszköz típusát.",
+        "Egyéb információkat, amit Ön választ megadni nekem, például visszajelzés, értékelések vagy hozzászólások."
+      ]
     },
     {
-      "title": "Információk Felhasználása",
-      "text": "Személyes információit azért használom, hogy szolgáltatásaimat nyújtsam és javítsam, hogy kapcsolatban legyek Önnel a fiókjával és szolgáltatásaimmal kapcsolatban, és hogy személyre szabjam az élményét a weboldalamon. Kifejezetten az alábbi célokra használhatom az információkat:",
+      "title": "Információk felhasználása",
+      "text": "Személyes információit arra használom, hogy szolgáltatásaimat bíztosítsam és javítsam, hogy kapcsolatba lépjek Önnel és tájékoztassam a szolgáltatásaimmal kapcsolatban, hogy személyre szabhassam az élményét a weboldalamon. Kifejezetten az alábbi célokra használhatom az információkat:",
       "list": [
         "Fizetések feldolgozása és tranzakciók teljesítése.",
-        "Támogatást nyújtás és válaszadás az érdeklődésekre.",
+        "Támogatás nyújtás és válaszadás az érdeklődésekre.",
         "Személyre szabott élmény nyújtása a weboldalamon.",
         "Promóciós üzenetek és marketing kommunikációk küldése.",
         "Weboldalam és szolgáltatásaim fejlesztése."
       ]
     },
     {
-      "title": "Információk Védelme",
-      "text": "Személyes információi védelmét komolyan veszem, és ésszerű intézkedéseket teszek annak védelme érdekében, hogy azokhoz illetéktelen hozzáférést, nyilvánosságra hozatalt vagy visszaélését megakadályozzam. Az iparág által elfogadott biztonsági technológiákat és eljárásokat használom az információi védelméhez."
+      "title": "Információk védelme",
+      "text": "Komolyan veszem a személyes információk védelmét és ésszerű intézkedéseket teszek annak érdekében, hogy azokhoz illetéktelen hozzáférést, nyilvánosságra hozást vagy a velók való visszaélést megakadályozzam. Az iparág által elfogadott biztonsági technológiákat és eljárásokat használom az információi védelméhez."
     },
     {
-      "title": "Információk Megosztása",
-      "text": "Nem értékesítem vagy bérbe adom személyes információit harmadik feleknek. Azonban megoszthatom az információit olyan harmadik fél szolgáltatókkal, akik segítenek nekem szolgáltatásaim nyújtásában, mint például a fizetési feldolgozók, a hosting szolgáltatók és az email szolgáltatók. Csak a szolgáltatások nyújtásához szükséges minimális mennyiségű információt osztom meg velük, és kötelezem ezeket a szolgáltatókat az információi bizalmas kezelésére."
+      "title": "Információk megosztása",
+      "text": "Nem értékesítem és nem adom bérbe a személyes információikat harmadik feleknek. Azonban megoszthatom az információit olyan szolgáltatókkal, akik segítenek nekem szolgáltatásaim nyújtásában, mint például a fizetési feldolgozók, a hosting szolgáltatók és az email szolgáltatók. Csak a szolgáltatások nyújtásához szükséges minimális mennyiségű információt osztom meg velük, és kötelezem ezeket a szolgáltatókat az információi bizalmas kezelésére."
     },
     {
-      "title": "Cookie-k Használata",
-      "text": "Cookie-kat és hasonló technológiákat használok szolgáltatásaim nyújtásához és javításához, weboldalam használatának elemzéséhez és a beállítások megjegyzéséhez. A cookie-k letiltására van lehetőség a böngésző beállításaiban, de ha ezt megteszi, az weboldalam egyes részei nem működhetnek megfelelően."
+      "title": "Cookie-k használata",
+      "text": "Cookie-kat és hasonló technológiákat használok szolgáltatásaim nyújtásához és javításához, statisztikákhoz és a beállítások megjegyzéséhez. A cookie-k letiltására lehetőség van a böngésző beállításaiban, de ez weboldalam egyes részeinek leállását eredményezheti."
     },
     {
-      "title": "Az Ön Választása",
-      "text": "Bármikor jogában áll hozzáférni, helyesbíteni vagy törölni személyes információit. Ezt közvetlenül kapcsolatba lépve velem teheti meg."
+      "title": "Az ön jogai",
+      "text": "Bármikor jogában áll hozzáférni, helyesbíteni vagy törölni személyes információit. Ezt velem közvetlenül kapcsolatba lépve teheti meg."
     },
     {
-      "title": "Az Irányelvek Módosítása",
-      "text": "Időről időre frissíthetem az Adatvédelmi Irányelveket, hogy az én gyakorlatom vagy egyéb üzemeltetési, jogi vagy szabályozási okok miatt történő változásokat tükrözzem. Az anyagváltozásokról értesíteni fogom Önt az aktualizált irányelvek közzétételével a weboldalamon vagy email küldés útján."
+      "title": "Az irányelvek módosítása",
+      "text": "Időről időre frissíthetem az Adatvédelmi irányelveket, hogy az én gyakorlatom vagy egyéb üzemeltetési, jogi vagy szabályozási okok miatt történő változásokat tükrözzem. Az anyagváltozásokról értesíteni fogom Önt az aktualizált irányelvek közzétételével a weboldalamon vagy egy email küldésével."
     },
     {
       "title": "Kapcsolat",
-      "text": "Ha bármilyen kérdése vagy aggodalma van az Adatvédelmi Irányelvekkel kapcsolatban, kérjük, lépjen kapcsolatba velem:",
+      "text": "Ha bármilyen kérdése vagy aggodalma van az Adatvédelmi irányelvekkel kapcsolatban, kérem, lépjen kapcsolatba velem a következő címen:",
       "email": "office@coffeeandcream.net"
     }
   ]

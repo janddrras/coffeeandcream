@@ -1,5 +1,5 @@
 {
-  "title": "Foglalkoztatási Feltételek",
+  "title": "Foglalkoztatási feltételek",
   "subtitle": [
     "Ezek a foglalkoztatási feltételek érvényesek minden Coffeeandcream által végzett munkára.",
     "Azzal, hogy engedélyt ad a munka folytatására, beleegyezik ezekhez a feltételekhez."
@@ -7,53 +7,53 @@
   "footer": "Jelen megállapodás bármely rendelkezésének érvénytelensége vagy nem végrehajthatósága nem érinti a megállapodás bármely más rendelkezésének érvényességét vagy végrehajthatóságát, amely teljes hatállyal marad érvényben.",
   "content": [
     {
-      "title": "Fizetési Feltételek",
+      "title": "Fizetési feltételek",
       "text": [
         "A munka megkezdése előtt a teljes munkadíj 50%-a előre fizetendő. A munka befejezésekor a fennmaradó összeget a számla dátumától számított 14 napon belül kell kifizetni. Nagyobb projektek esetén előfordulhat, hogy egy nagyobb előleget vagy részletfizetési ütemtervet kérek. Ha ez a helyzet, akkor erről egyeztetek Önnel a munkám megkezdése előtt.",
         "A befejezés azt jelenti, amikor a weboldal már funkcionálisan készen áll, és nem feltétlenül akkor, amikor a tartalom is teljes. Az Ön felelőssége, hogy minden tartalmat, belépési adatokat és más anyagot, amelyre szükség van a munka befejezéséhez, időben eljuttassa hozzám.",
         "Ha nem tartja be a 14 napos fizetési határidőt, akkor fenntartom a jogot, hogy szüneteltetem a munkát vagy felfüggesszem a szolgáltatásokat. Az immateriális tulajdonjogok sem kerülnek átruházásra, és a már szolgáltatott kódok, grafikák vagy más anyagok visszavonásra kerülnek.",
-        "Ha nem tudom együttműködése miatt egy kész weboldalt szállítani, akkor fenntartom a jogot, hogy a weboldal befejezése előtt teljes összeget számlázzak vagy részletfizetést kérjek."
+        "Ha nem tudom az együttműködése miatt a kész weboldalt szállítani, akkor fenntartom a jogot, hogy a weboldal befejezése előtt a teljes összeget leszámlázzam vagy részletfizetést kérjek."
       ]
     },
     {
-      "title": "Projekt Számítás és Design Elfogadása",
+      "title": "Projekt tartalom és design elfogadása",
       "text": [
-        "Az Ön felelőssége, hogy a kérés tartalmazza a projekt részletes követelményeit, mielőtt ajánlatot kérne tőlem. Ennek elmulasztása váratlan további idő- és költségigényhez vezethet.",
+        "Az Ön felelőssége, hogy a kérése tartalmazza a projekt részletes követelményeit az árajánlat kérése során. Ennek elmulasztása váratlan további idő- és költségigényhez vezethet.",
         "Erősen ajánlott, hogy mutassa meg nekem a terveit vagy vázlatait mielőtt a projektet elkezdem. Ez segít elkerülni kellemetlen helyzeteket, amikor el kell utasítanom a vázlatait, mert már kifejlesztettem a szerkezetet.",
         "Az Ön felelőssége, hogy a design-okat és a tartalmakat a fejlesztés megkezdése előtt biztosítsa számomra. Az elfogadás után már nem lehet módosítani a design-on, csak kisebb változtatásokat lehet eszközölni."
       ]
     },
     {
-      "title": "Módosítások az Elfogadott Projekt Terjedelmében",
+      "title": "Módosítások az elfogadott projekt terjedelmében",
       "text": [
-        "A munkálatokra vonatkozó ajánlat után történő projektterjedelem változtatásokra az adott plusz munkálatokra vonatkozóan új ajánlatot adok. Az ilyen munkálatokhoz további időtervet is szükséges meghatározni, amely akadályozhatja a projekt szállítását.",
+        "A munkálatokra vonatkozó ajánlat után történő projektterjedelmi változtatásokra és plusz munkálatokra új ajánlatot adok. Az ilyen munkálatokhoz az időtervet is változtathatom, amely elhalaszthatja a projekt szállítását.",
         "Az extra munkálatokat külön számlázhatom az eredeti projektterjedelem mellett.",
         "Az extra munkálatok nem befolyásolják az eredeti projektterjedelem számlázási módját vagy idejét."
       ]
     },
     {
-      "title": "Elfogadás és Módosítások az Oldalakon Közzététel Előtt",
+      "title": "Elfogadás és utólagos módosítások az oldal közzététele előtt",
       "text": [
-        "A megegyezett 50%-os előleg elhagyásával megerősíti, hogy elkezdhetem a kialakítást.",
+        "A megegyezett 50%-os előleg megadásával megerősíti, hogy elkezdhetem a projektet.",
         "Csak három kör módosítást fogadok el, amelyek az elfogadott projekt költségeihez kapcsolódnak a közzététel előtt. Azon túli idő vagy munka az előzőekben említett 3. pont szerint kerül felszámításra. Ezért javaslom, hogy gyűjtsön össze minden módosítási kérést egyetlen tömör e-mailben."
       ]
     },
     {
-      "title": "Szellemi Tulajdonjogok",
+      "title": "Szellemi tulajdonjogok",
       "text": [
         "Az e szerződés keretében szállított minden munka a teljes összes számla kifizetése után az Ön tulajdonává válik. Addig az időpontig az általam létrehozott összes kód, grafika és egyéb anyag a saját tulajdonomban marad.",
         "A tulajdonjogok nem tartalmazzák azoknak a harmadik féltől származó szoftvereknek és bővítményeknek a forráskódját, amelyek részei a munkálatoknak."
       ]
     },
     {
-      "title": "Szerződés Megszüntetése",
+      "title": "Szerződés megszüntetése",
       "text": [
         "Bármely fél bármikor megszüntetheti a szerződést. Ezt a záradékot csak rendkívül ritka esetben hivatkoznám meg, ha megoldhatatlan vita merül fel.",
         "A megszüntetés esetén bármelyik fél kérésére számlát állítok ki az utolsó szerződéses napig teljesített munkáért. Az eddig elkészített minden kód, grafika és más anyag az Immaterial Tulajdonjogok Záradékának megfelelően Önhöz kerül."
       ]
     },
     {
-      "title": "Információk Bizalmas Kezelése",
+      "title": "Információk bizalmas kezelése",
       "text": [
         "Mindkét fél egyetért azzal, hogy nem hozza nyilvánosságra a szerződés lebonyolítása előtt vagy annak során nyújtott bizalmas információkat."
       ]
@@ -65,9 +65,9 @@
       ]
     },
     {
-      "title": "Ideiglenes Webhely Hosting",
+      "title": "Ideiglenes web tárhely",
       "text": [
-        "Amikor egy új weboldalt fejlesztek, választhatom az ideiglenes tárhely biztosítását a webhely számára a fejlesztés időtartamára. Ezt bármikor értesítés nélkül visszavonhatom. Ha inkább a saját szerverein kívánja tárolni a weboldalt, akkor meg kell adnia a szükséges belépési adatokat és hitelesítő adatokat az elfogadás előtt.",
+        "Amikor egy új weboldalt fejlesztek, egy ideiglenes tárhelyet biztosítok a webhely számára a fejlesztés időtartamára. Ezt bármikor értesítés nélkül visszavonhatom. Ha inkább a saját szerverein kívánja tárolni a weboldalt, akkor meg kell adnia a szükséges belépési adatokat és hitelesítő adatokat az elfogadás előtt.",
         "Ha a weboldal fejlesztése után szeretné meghosszabbítani ezt az ideiglenes tárhelyszolgáltatást, például ha még mindig tartalomra van szüksége, akkor ezt kérheti. Azonban díjat számíthatok fel ezért."
       ]
     },

@@ -4,15 +4,15 @@
     "subtitle": "Pagini web profesionale la prețuri accesibile."
   },
   "welcome": {
-    "title": "Bun venit!",
+    "title": "Bine ați venit!",
     "text": [
       "Sunt un designer și dezvoltator web independent cu ani de experiență în furnizarea de servicii de înaltă calitate clienților din întreaga lume. Serviciile mele includ design web, dezvoltare web, soluții de comerț electronic, sisteme de gestionare a conținutului și multe altele. Folosesc cele mai recente tehnologii și cele mai bune practici pentru a mă asigura că proiectele mele sunt mereu actualizate și de cea mai înaltă calitate.",
-      "Cred că fiecare afacere merită un site excelent, și sunt hotărât să fac din asta realitate pentru clienții mei. Contactează-mă azi pentru a afla mai multe despre serviciile mele și cum te pot ajuta să îți duci prezența online la nivelul următor. Îți mulțumesc că mă iei în considerare pentru nevoile tale de design și dezvoltare web."
+      "Cred că fiecare afacere merită un site excelent, și sunt hotărât să fac din asta realitate pentru clienții mei. Contactați-mă azi pentru a afla mai multe despre serviciile mele și cum vă pot ajuta să vă duceți prezența online la nivelul următor. Vă mulțumesc că mă luați în considerare pentru nevoile Dvs. de design și dezvoltare web."
     ]
   },
   "services": {
-    "title": "servicii",
-    "text": "Ofer o varietate de servicii pentru a-ți ajuta afacerea online să reușească. Pe lângă designul și dezvoltarea de site-uri web, pot ajuta și cu brandingul și designul grafic pentru a oferi afacerii tale un aspect profesional și coerent. Cu expertiza mea în aceste domenii, pot ajuta să creezi o prezență online unică și atrăgătoare pentru clienți. Te pot ajuta să alegi numele de domeniu potrivit, soluțiile de găzduire și tehnologiile pentru performanță optimă și eficiență în costuri.",
+    "title": "Servicii",
+    "text": "Ofer servicii complete de design și programare.Vă pot ajuta cu brandingul și designul grafic, cu experiența mea în aceste domenii vă pot ajuta să creați o prezență online unică și atrăgătoare. Vă pot ajuta să alegeți numele de domeniu potrivit, soluțiile de găzduire web și tehnologiile potrivite pentru performanță optimă și ieftină.",
     "list": [
       {
         "name": "Web",
@@ -21,7 +21,7 @@
       },
       {
         "name": "Dezvoltare",
-        "description": ["Codificare din design", "Aplicații web", "Sisteme de gestionare a conținutului", "Animații", "Găzduire"],
+        "description": ["Programare din design", "Aplicații web", "Sisteme de gestionare a conținutului", "Animații", "Găzduire"],
         "image": "/images/coding.jpg"
       },
       {

@@ -4,7 +4,13 @@
   "content": [
     {
       "title": "Information I Collect",
-      "text": "In order to provide my services, I may collect the following types of personal information from my users: - Contact information, such as name, email address, phone number, and mailing address. - Payment information, such as credit card numbers, billing addresses, and other payment details. - Information about your use of my website, including your IP address, browser type, and device type. - Other information you choose to provide to me, such as feedback, reviews, or comments."
+      "text": "In order to provide my services, I may collect the following types of personal information from my users:",
+      "list": [
+        "Contact information, such as name, email address, phone number, and mailing address.",
+        "Payment information, such as credit card numbers, billing addresses, and other payment details.",
+        "Information about your use of my website, including your IP address, browser type, and device type.",
+        "Other information you choose to provide to me, such as feedback, reviews, or comments."
+      ]
     },
     {
       "title": "How I Use Your Information",

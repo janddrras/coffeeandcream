@@ -4,19 +4,19 @@
     "subtitle": "Professzionális weboldalak megfizethető áron."
   },
   "welcome": {
-    "title": "Üdvözöljük!",
+    "title": "Helló!",
     "text": [
-      "Szerződéses webdesigner és fejlesztő vagyok évek óta tapasztalattal, akik minőségi szolgáltatásokat nyújtanak ügyfeleknek szerte a világon. Szolgáltatásaim közé tartozik a webdesign, webfejlesztés, e-kereskedelmi megoldások, tartalomkezelő rendszerek és még sok más. A legújabb technológiákat és bevált gyakorlatokat használom, hogy projektem mindig naprakész és a legmagasabb minőségű legyen.",
-      "Hiszem, hogy minden vállalkozás megérdemel egy remek weboldalt, és elkötelezett vagyok amellett, hogy ezt valóra váltsam ügyfeleim számára. Lépjen kapcsolatba velem még ma, hogy többet megtudjon szolgáltatásaimról, és hogyan segíthetem Önt eljuttatni online jelenlétét egy új szintre. Köszönöm, hogy számít rám webdesign és fejlesztési igényeihez."
+      "Független webdesigner és programozó-fejlesztő vagyok sok éves tapasztalattal. Minőségi szolgáltatásokat próbálok nyújtanak ügyfeleimnek szerte a világon. Szolgáltatásaim közé tartozik a webdesign, webfejlesztés, e-kereskedelem, tartalomkezelő rendszerek és még sok más. A legújabb technológiákat és használom, hogy projektem mindig naprakész és a legmagasabb minőségű legyen.",
+      "Hiszem, hogy minden vállalkozás megérdemel egy remek weboldalt, és elkötelezett vagyok amellett, hogy ezt valóra váltsam ügyfeleim számára. Lépjen kapcsolatba velem még ma, hogy többet megtudjon szolgáltatásaimról, és hogyan segíthetek az online jelenlététe megvalósításában. Köszönöm, hogy számít rám webdesign és fejlesztéshez."
     ]
   },
   "services": {
-    "title": "szolgáltatások",
-    "text": "Különböző szolgáltatásokat kínálok, hogy online vállalkozása sikeres legyen. A weboldalak tervezése és fejlesztése mellett segíthetek a márkaépítésben és a grafikai tervezésben, hogy vállalkozása professzionális és összetartó megjelenést kapjon. Szakértelmemmel ezeken a területeken segíthetek egyedi, vevőket vonzó online jelenléttel rendelkező weboldal kialakításában. Segítek a megfelelő domainnév, tárhelymegoldások és technológiák kiválasztásában optimális weboldal teljesítmény és költséghatékonyság érdekében.",
+    "title": "Szolgáltatások",
+    "text": "Teljes körü szolgáltatásokat kínálok, hogy online vállalkozása sikeres legyen. Segíthetek a megfelelő domainnév, tárhelymegoldások és technológiák kiválasztásában az optimális teljesítmény és költséghatékonyság érdekében.",
     "list": [
       {
         "name": "Web",
-        "description": ["Landoló oldal", "Portfólió weboldal", "Vállalati weboldal", "Webalkalmazás", "Webáruház", "Blog"],
+        "description": ["Nyitó oldal", "Portfólió weboldal", "Vállalati weboldal", "Webalkalmazás", "Webáruház", "Blog"],
         "image": "/images/web.jpg"
       },
       {
@@ -32,27 +32,27 @@
     ]
   },
   "faq": {
-    "title": "Gyakran Ismételt Kérdések",
+    "title": "Gyakori kérdések",
     "list": [
       {
         "id": 1,
         "question": "Mennyibe kerül egy weboldal?",
-        "answer": "Egy weboldal ára számos tényezőtől függ, mint például a projekt bonyolultsága, a szükséges funkciók és az idő- és munkaigény. Szorosan együttműködöm ügyfeleimmel, hogy meghatározzuk az igényeiknek megfelelő költségvetést, és törekszem az átlátható árazásra és a világos kommunikációra a projekt teljes ideje alatt."
+        "answer": "Egy weboldal ára számos tényezőtől függ, mint például a projekt bonyolultsága, a szükséges funkciók, az idő- és munkaigény. Szorosan együttműködöm ügyfeleimmel, hogy meghatározzuk az igényeiknek megfelelő költségvetést, és törekszem az átlátható árazásra és a világos kommunikációra a projekt teljes ideje alatt."
       },
       {
         "id": 2,
         "question": "Mennyi ideig tart egy tipikus projekt befejezése?",
-        "answer": "Egy projekt időtartama változhat a projekt méretétől és bonyolultságától függően. Míg egy egyszerű weboldal elkészítése néhány napig vagy hetekig is tarthat, egy bonyolultabb projekt akár több hónapot is igénybe vehet. Hatékonyan és hatékonyan dolgozom, hogy biztosítsam a projektek időben történő befejezését, anélkül, hogy a minőséget veszélyeztetném."
+        "answer": "Egy projekt időtartama változhat a projekt méretétől és bonyolultságától függően. Míg egy egyszerű weboldal elkészítése néhány napig vagy hetekig is tarthat, egy bonyolultabb projekt akár több hónapot is igénybe vehet. Hatékonyan dolgozom, hogy biztosítsam a projektek időben történő befejezését, anélkül, hogy a minőséget veszélyeztetném."
       },
       {
         "id": 3,
-        "question": "Mi van minden projektben?",
+        "question": "Mit tatrtalmaz minden projekt?",
         "answer": "Minden projekt egy teljes körű szolgáltatáscsomagot tartalmaz, ideértve részletes konzultációt, vázlatkészítést, tartalom létrehozást, design-t, fejlesztést, keresőoptimalizálást (SEO), végleges tesztelést és finomhangolást. Továbbá opcionális karbantartási és támogatási szolgáltatásokat is kínálok annak érdekében, hogy ügyfeleink weboldalai mindig naprakészek és jól működők legyenek hosszú távon."
       },
       {
         "id": 4,
         "question": "Miért nem WordPress?",
-        "answer": "Bár a WordPress népszerű platform weboldalakhoz, én azt tekintem elavult technológiának. Hiszem, hogy minden projekt egyedi, és személyre szabott megközelítést igényel, ezért különböző technológiákat és platformokat használok annak biztosítására, hogy ügyfeleim weboldala megfeleljen az ő specifikus igényeiknek és elvárásaiknak."
+        "answer": "Bár a WordPress népszerű platform weboldalakhoz, én elavult technológiának tekintem. Hiszem, hogy minden projekt egyedi, és személyre szabott megközelítést igényel, ezért különböző modern technológiákat és platformokat használok annak biztosítására, hogy ügyfeleim weboldala megfeleljen az ő specifikus igényeiknek és elvárásaiknak."
       },
       {
         "id": 5,

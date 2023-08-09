@@ -22,7 +22,7 @@ const Menu = () => {
       <motion.div className="bg-black grid place-items-center absolute inset-y-0 left-8 w-full z-30" variants={menuLayer}>
         <nav>
           <motion.ul
-            className="flex flex-col justify-around py-24 items-left h-screen"
+            className="flex flex-col justify-around py-24 md:py-48 items-left h-screen"
             animate={menu ? "open" : "closed"}
             variants={listVariants}
           >
