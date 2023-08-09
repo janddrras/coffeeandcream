@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion"
 import { menuButtonCircle, menuButtonSpan, menuLine1, menuLine2 } from "../../_lib/variants/menuButton"
-import { useMenu } from "../providers/MenuProvider"
+import { useMenuContext } from "../providers/MenuProvider"
 import { useDictionary } from "../providers/LangProvider"
 
 interface MenuButtonProps {}
 
 const MenuButton = ({}: MenuButtonProps) => {
   const dict = useDictionary()
-  const { menu, setMenu, setSettings } = useMenu()
+  const { menu, setMenu, setSettings } = useMenuContext()
   const clickAction = () => {
     setSettings(false)
     setMenu(!menu)

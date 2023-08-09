@@ -1,18 +1,18 @@
 {
   "hero": {
-    "title": "contact",
-    "subtitle": "Hai la o cafea virtuala si povesteste despre proiectul tau."
+    "title": "Contact",
+    "subtitle": "Hai la o cafea virtuală și povestește despre proiectul tău."
   },
   "form": {
     "title": "Trimite-mi un mesaj",
     "text-inputs": ["Nume sau Companie", "Adresă de email", "Mesajul tău"],
-    "checkbox": "Sunt de acord cu declarația de confidențialitate și consimt să fiu contactat de biroul Coffeeandcream",
+    "checkbox": "Sunt de acord cu declarația de confidențialitate și consimt să fiu contactat de biroul Coffeeandcream.",
     "button": ["TRIMITE", "SE TRIMITE"],
     "messages": {
       "no-name": "Vă rugăm să introduceți numele dvs. sau numele companiei.",
       "no-email": "Vă rugăm să introduceți adresa dvs. de email.",
       "no-message": "Trimiterea unui mesaj gol nu are niciun sens!",
-      "success": "Vă mulțumesc pentru mesajul dvs. Voi reveni la dvs. cât mai curând posibil.",
+      "success": "Vă mulțumesc pentru mesajul dvs. Voi reveni cât mai curând posibil.",
       "error": "Ceva nu a mers bine. Vă rugăm să încercați din nou."
     }
   },
@@ -43,13 +43,13 @@
         "name": "social-ad",
         "price": "100",
         "category": "design",
-        "label": "Anunțuri pe rețele sociale"
+        "label": "Anunț pe rețelele sociale"
       },
       {
         "name": "social-page",
         "price": "100",
         "category": "design",
-        "label": "Pagină pe rețele sociale"
+        "label": "Pagină de rețele sociale"
       },
       {
         "name": "flyer",
@@ -67,13 +67,13 @@
         "name": "coding",
         "price": "500",
         "category": "development",
-        "label": "Design în HTML/CSS/Javascript"
+        "label": "Convertire design existent în HTML/CSS/Javascript"
       },
       {
         "name": "landing-page",
         "price": "300",
         "category": "development",
-        "label": "Pagină de aterizare"
+        "label": "Pagină de destinație"
       },
       {
         "name": "static-site",
@@ -85,7 +85,7 @@
         "name": "with-crm",
         "price": "1000",
         "category": "development",
-        "label": "Site cu CRM"
+        "label": "Site cu CMS"
       },
       {
         "name": "e-commerce",

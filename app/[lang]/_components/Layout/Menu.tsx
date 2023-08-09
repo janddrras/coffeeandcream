@@ -4,11 +4,11 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { HiOutlineArrowRight } from "react-icons/hi"
 import { linkVariants, listVariants, menuLayer, menuVariant, spanVariants, textVariants } from "../../_lib/variants/menu"
-import { useMenu } from "../providers/MenuProvider"
+import { useMenuContext } from "../providers/MenuProvider"
 import { useDictionary } from "../providers/LangProvider"
 
 const Menu = () => {
-  const { menu, setMenu } = useMenu()
+  const { menu, setMenu } = useMenuContext()
   const { layout } = useDictionary()
 
   return (

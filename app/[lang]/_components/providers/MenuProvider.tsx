@@ -24,4 +24,4 @@ export const MenuProvider = ({ children }: { children: React.ReactNode }) => {
   return <Menu.Provider value={{ menu, setMenu, setSettings, settings }}>{children}</Menu.Provider>
 }
 
-export const useMenu = () => useContext(Menu)
+export const useMenuContext = () => useContext(Menu)

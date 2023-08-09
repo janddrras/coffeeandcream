@@ -13,14 +13,14 @@ import {
   spring
 } from "../../_lib/variants/settings"
 import Link from "next/link"
-import { useMenu } from "../providers/MenuProvider"
+import { useMenuContext } from "../providers/MenuProvider"
 import { usePathname } from "next/navigation"
 import { i18n } from "../../../../i18n-config"
 import { useDictionary } from "../providers/LangProvider"
 
 const Settings = () => {
   const dict = useDictionary()
-  const { settings, setSettings } = useMenu()
+  const { settings, setSettings } = useMenuContext()
   const { theme, setTheme } = useTheme()
   const switchTheme = () => setTheme(theme === "light" ? "dark" : "light")
 

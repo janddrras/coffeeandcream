@@ -1,43 +1,43 @@
 {
   "hero": {
-    "title": "kapcsolat",
-    "subtitle": "Igyunk egy virtuális kávét, és mesélj rólad és a vállalkozásodról."
+    "title": "Kapcsolat",
+    "subtitle": "Igyunk egy virtuális kávét, és mesélj magadról és a vállalkozásodról."
   },
   "form": {
     "title": "Küldj egy üzenetet!",
-    "text-inputs": ["Név vagy Cég", "Email cím", "Az üzeneted"],
-    "checkbox": "Egyetértek az adatvédelmi nyilatkozattal, és hozzájárulok, hogy a Coffeeandcream irodával felvegyék velem a kapcsolatot",
-    "button": ["KULDES", "FOLYAMATBAN..."],
+    "text-inputs": ["Név vagy cégnév", "Email cím", "Az üzeneted"],
+    "checkbox": "Egyetértek az adatvédelmi nyilatkozattal és hozzájárulok, hogy a Coffeeandcream felvegye velem a kapcsolatot.",
+    "button": ["KÜLDÉS", "FOLYAMATBAN..."],
     "messages": {
       "no-name": "Kérjük, adja meg a nevét vagy cége nevét.",
       "no-email": "Kérjük, adja meg az email címét.",
       "no-message": "Üres üzenet küldése értelmetlen!",
-      "success": "Köszönjük az üzenetét. Amint lehetséges, válaszolni fogok Önnek.",
-      "error": "Hiba történt. Kérjük, próbálja újra."
+      "success": "Köszönöm az üzenetet. Amint lehetséges, válaszolni fogok.",
+      "error": "Hiba történt. Kérem, próbálja újra."
     }
   },
   "prices": {
-    "title": "Érdekel (opcionális):",
+    "title": "Érdekelne (opcionális):",
     "subtitles": ["Fejlesztés", "Design", "Becsült ár"],
-    "caption": "A megadott ár becslés, és változhat olyan tényezőktől függően, mint a felhasznált technológiák, az időkorlátok és az igényelt további szolgáltatások.",
+    "caption": "A megadott ár csak egy becslés, és változhat olyan tényezőktől függően, mint a felhasznált technológiák, az időkorlátok és más szolgáltatások.",
     "items": [
       {
         "name": "logo",
         "price": "100",
         "category": "design",
-        "label": "Logó design"
+        "label": "Logó tervezés"
       },
       {
         "name": "branding",
         "price": "300",
         "category": "design",
-        "label": "Branding design"
+        "label": "Branding tervezés"
       },
       {
         "name": "web-design",
         "price": "600",
         "category": "design",
-        "label": "Weboldal design"
+        "label": "Weboldal tervezés"
       },
       {
         "name": "social-ad",
@@ -55,25 +55,25 @@
         "name": "flyer",
         "price": "300",
         "category": "design",
-        "label": "Szórólap/brosúra design"
+        "label": "Szórólap tervezés"
       },
       {
         "name": "catalog",
         "price": "1000",
         "category": "design",
-        "label": "Katalógus design"
+        "label": "Katalógus tervezés"
       },
       {
         "name": "coding",
         "price": "500",
         "category": "development",
-        "label": "Design HTML/CSS/Javascript-ben"
+        "label": "Létező design programozása"
       },
       {
         "name": "landing-page",
         "price": "300",
         "category": "development",
-        "label": "Landing oldal"
+        "label": "Nyitóoldal"
       },
       {
         "name": "static-site",
@@ -85,7 +85,7 @@
         "name": "with-crm",
         "price": "1000",
         "category": "development",
-        "label": "Oldal CRM-mel"
+        "label": "Oldal CMS-sel"
       },
       {
         "name": "e-commerce",

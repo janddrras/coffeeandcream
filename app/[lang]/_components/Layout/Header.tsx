@@ -7,31 +7,29 @@ import { logoInner } from "../../_lib/variants/logo"
 import MenuButton from "../../_components/ui/MenuButton"
 import Menu from "../../_components/Layout/Menu"
 import Settings from "../../_components/Layout/Settings"
-import { useMenu } from "../providers/MenuProvider"
+import { useMenuContext } from "../providers/MenuProvider"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { useScrollDirection } from "../../_hooks/useScrollDirection"
-import useMeasure from "react-use-measure"
-import { useState } from "react"
-import { useIsomorphicLayoutEffect } from "../../_hooks/useIsomorphicLayoutEffect"
+import { useEffect, useState } from "react"
+import useWindowDimensions from "../../_hooks/useWindowDimensions"
 
 const Header = () => {
-  const { settings, setSettings, menu } = useMenu()
+  const { settings, setSettings, menu } = useMenuContext()
   const locale = usePathname().split("/")[1]
   const [active, top] = useScrollDirection()
-  let [ref, { width }] = useMeasure()
+  const { width } = useWindowDimensions()
   const [mobile, setMobile] = useState(false)
 
-  useIsomorphicLayoutEffect(() => {
-    width < 768 ? setMobile(true) : setMobile(false)
-  }, [ref])
+  useEffect(() => {
+    if (width) width < 768 ? setMobile(true) : setMobile(false)
+  }, [width])
 
   return (
     <motion.header
       className={`fixed h-52 w-full z-40 pt-12 ${
-        mobile ? (top === 0 ? "bg-cream-20 dark:bg-coffee-90 transition-colors delay-150" : "") : ""
+        mobile ? (top !== 0 ? "bg-cream-20 dark:bg-coffee-90 transition-colors delay-150" : "") : ""
       }`}
-      ref={ref}
       initial={{ y: 0 }}
       animate={
         mobile
