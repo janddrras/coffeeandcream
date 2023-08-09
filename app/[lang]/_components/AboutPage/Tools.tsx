@@ -12,7 +12,7 @@ const Tools = () => {
   const dict = useDictionary()
 
   return (
-    <section className="bg-cream-30/10 dark:bg-coffee-90/50 pt-16 md:pb-32 pb-8 px-2 md:px-8">
+    <section className="bg-cream-30/10 dark:bg-coffee-90/50 pt-16 md:pb-32 pb-8 px-2 md:px-8" id="tools">
       <SectionTitle>{dict.aboutPage.tools.title}</SectionTitle>
       <div className="flex flex-col gap-8">
         <div className="flex flex-row flex-wrap md:flex-row items-center justify-center gap-4">

@@ -12,7 +12,7 @@ const Faq = () => {
   const dict = useDictionary()
 
   return (
-    <section>
+    <section id="faq">
       <div className="pt-16 pb-32 px-8">
         <SectionTitle>{dict.homePage.faq.title}</SectionTitle>
         <LayoutGroup>
