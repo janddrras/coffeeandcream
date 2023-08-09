@@ -7,6 +7,8 @@ import { motion } from "framer-motion"
 import { circleVariants, lineVariants } from "../../_lib/variants/hero"
 import { useDictionary } from "../providers/LangProvider"
 import Image from "next/image"
+import laptop from "/public/images/laptop.png"
+import phone from "/public/images/phone.png"
 
 const Hero = () => {
   let [ref, { width }] = useMeasure()
@@ -15,7 +17,7 @@ const Hero = () => {
   const dict = useDictionary()
 
   return (
-    <section className="relative pt-32 md:pt-64 mb-32 px-8 flex flex-col md:flex-row z-10" ref={ref} id="hero">
+    <section className="relative pt-32 md:pt-64 mb-32 px-8 flex flex-col lg:flex-row z-10" ref={ref} id="hero">
       <div className="relative">
         {dict.homePage.hero.title.map((title) => (
           <PageTitle key={title}>{title}</PageTitle>
@@ -23,15 +25,9 @@ const Hero = () => {
         <motion.hr className="opacity-25 mt-8 origin-left" variants={lineVariants} initial="initial" animate="animate" />
         <p className="font-sans text-xl tracking-wide font-light py-8">{dict.homePage.hero.subtitle}</p>
       </div>
-      <div className="relative w-full">
-        <Image src="/images/laptop.png" width={400} height={64} alt="Laptop" className="absolute inset-0" />
-        <Image
-          src="/images/phone.png"
-          width={120}
-          height={64}
-          alt="Mobile Phone"
-          className="absolute md:top-24 md:right-8 scale-50 md:scale-100"
-        />
+      <div className="relative w-full h-full mb-64 lg:mb-0">
+        <Image src={laptop} alt="Laptop" className="absolute inset-0 md:scale-75 lg:scale-100" />
+        <Image src={phone} alt="Mobile Phone" className="absolute -md:bottom-24 md:left-20 scale-50 md:scale-50" />
       </div>
       <svg
         className="hidden lg:block absolute top-10 right-1 w-full z-0 opacity-100 max-w-min origin-center"

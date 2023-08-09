@@ -8,6 +8,7 @@ import { circleVariants, lineVariants } from "../../_lib/variants/hero"
 import useMeasure from "react-use-measure"
 import { useDictionary } from "../providers/LangProvider"
 import Image from "next/image"
+import cupOfCoffee from "/public/images/coffee.png"
 
 const ContactHero = () => {
   let [ref, { width }] = useMeasure()
@@ -16,7 +17,7 @@ const ContactHero = () => {
   const dict = useDictionary()
 
   return (
-    <section className="relative w-full pt-32 md:pt-64 lg:pb-32 pb-24 px-8" ref={ref} id="contact-hero">
+    <section className="relative w-full pt-32 md:pt-64 lg:pb-32 pb-24 px-8 z-10" ref={ref} id="contact-hero">
       <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
         <div className="w-full lg:w-1/2 xl:w-full">
           <PageTitle>{dict.contactPage.hero.title}</PageTitle>
@@ -25,7 +26,7 @@ const ContactHero = () => {
           <p className="font-sans text-lg tracking-wide font-light py-8">{dict.contactPage.hero.subtitle}</p>
         </div>
         <div className="relative max-w-max">
-          <Image width={400} height={280} src="/images/coffee.png" alt="Cup of cappuccino" className="relative z-10" />
+          <Image src={cupOfCoffee} alt="Cup of cappuccino" className="relative scale-75 md:scale-100 z-10" />
           <div className="md:w-96 md:h-96 w-48 h-48 bg-red rounded-full absolute -top-10 right-0 z-0"></div>
         </div>
         <svg
