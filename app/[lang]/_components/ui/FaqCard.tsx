@@ -23,7 +23,7 @@ const FaqCard = ({ id, question, answer, activeId, setActiveId }: FaqCardProps) 
       onClick={() => toggleActive(id)}
     >
       <div className="flex justify-between gap-4 items-center">
-        <h4 className="font-sans font-bold text-lg md:text-2xl text-coffee-80/80 dark:text-cream-30/80">{question}</h4>
+        <h3 className="font-sans font-bold text-lg md:text-2xl text-coffee-80/80 dark:text-cream-30/80">{question}</h3>
         <motion.div initial="closed" variants={arrowVariant} animate={active ? "open" : "closed"} className="max-h-max max-w-max">
           <ImArrowDown2 className="text-coffee-80/80 dark:text-cream-30/80" />
         </motion.div>

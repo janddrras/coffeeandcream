@@ -7,7 +7,7 @@ import Faq from "./_components/HomePage/Faq"
 export default function Home() {
   return (
     <>
-      {/* <Intro /> */}
+      <Intro />
       <Hero />
       <Welcome />
       <Services />

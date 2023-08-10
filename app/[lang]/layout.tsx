@@ -9,6 +9,7 @@ import { MenuProvider } from "./_components/providers/MenuProvider"
 import { i18n } from "../../i18n-config"
 import type { Locale } from "@/i18n-config"
 import { LangProvider } from "./_components/providers/LangProvider"
+import { Analytics } from "@vercel/analytics/react"
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -42,6 +43,7 @@ export default async function RootLayout({ children, params }: { children: React
             </main>
             <Footer />
           </Theme>
+          <Analytics />
         </body>
       </html>
     </LangProvider>

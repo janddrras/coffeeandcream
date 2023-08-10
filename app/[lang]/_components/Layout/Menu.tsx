@@ -27,8 +27,8 @@ const Menu = () => {
             variants={listVariants}
           >
             {layout.menu["menu-items"].map((item) => (
-              <Link href={item.url} key={item.id}>
-                <motion.li className="md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants}>
+              <motion.li className="md:pl-8 pr-4 md:pr-40" onClick={() => setMenu(!menu)} variants={linkVariants} key={item.id}>
+                <Link href={item.url}>
                   <motion.div className="w-full flex flex-col md:flex-row items-start" whileHover="hovered">
                     <motion.span className="text-4xl text-cream-30 pb-4 md:pb-0 mr-8 md:mr-14 opacity-0" variants={spanVariants}>
                       <HiOutlineArrowRight />
@@ -40,8 +40,8 @@ const Menu = () => {
                       {item.name}
                     </motion.p>
                   </motion.div>
-                </motion.li>
-              </Link>
+                </Link>
+              </motion.li>
             ))}
           </motion.ul>
         </nav>

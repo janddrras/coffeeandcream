@@ -33,9 +33,9 @@ const Settings = () => {
   }
 
   return (
-    <>
+    <div className="relative w-full">
       <motion.aside
-        className="absolute top-44 right-8 w-64 h-64 z-40 origin-top-right "
+        className="absolute m-auto left-0 right-0 top-12 w-64 h-64 z-40 origin-top-right "
         variants={settingsVariant}
         animate={settings ? "open" : "closed"}
         initial="closed"
@@ -92,7 +92,7 @@ const Settings = () => {
         initial="closed"
         onClick={() => setSettings(false)}
       />
-    </>
+    </div>
   )
 }
 

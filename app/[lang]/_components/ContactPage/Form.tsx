@@ -44,7 +44,7 @@ const Form = () => {
         <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm" lineColor="red">
           {dict.contactPage.form.checkbox}
         </Checkbox>
-        <Button type="submit" isDisabled={!privacyAgreement || loading}>
+        <Button type="submit" id="submit" isDisabled={!privacyAgreement || loading}>
           {loading ? `${dict.contactPage.form.button[1]}` : `${dict.contactPage.form.button[0]}`}
         </Button>
       </div>

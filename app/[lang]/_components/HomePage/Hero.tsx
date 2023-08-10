@@ -26,8 +26,8 @@ const Hero = () => {
         <p className="font-sans text-xl tracking-wide font-light py-8">{dict.homePage.hero.subtitle}</p>
       </div>
       <div className="relative w-full h-full mb-64 lg:mb-0">
-        <Image src={laptop} alt="Laptop" className="absolute inset-0 md:scale-75 lg:scale-100" />
-        <Image src={phone} alt="Mobile Phone" className="absolute -md:bottom-24 md:left-20 scale-50 md:scale-50" />
+        <Image src={laptop} alt="Laptop" className="absolute inset-0 md:scale-75 lg:scale-100" priority />
+        <Image src={phone} alt="Mobile Phone" className="absolute md:left-20 scale-50 md:scale-50 lg:scale-75 lg:top-32" priority />
       </div>
       <svg
         className="hidden lg:block absolute top-10 right-1 w-full z-0 opacity-100 max-w-min origin-center"

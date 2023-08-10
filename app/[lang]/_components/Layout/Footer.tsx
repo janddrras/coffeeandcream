@@ -32,6 +32,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-3xl hover:text-cream-10 mx-3 inline-block transition-colors duration-300 ease-in-out"
+                  aria-label="Link to my LinkedIn page"
                 >
                   <ImLinkedin />
                 </a>
@@ -40,6 +41,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-3xl hover:text-cream-10 mx-3 inline-block transition-colors duration-300 ease-in-out"
+                  aria-label="Link to my Facebook page"
                 >
                   <ImFacebook2 />
                 </a>
@@ -48,6 +50,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-3xl hover:text-cream-10 mx-3 md:mr-0 inline-block transition-colors duration-300 ease-in-out"
+                  aria-label="Link to my Github page"
                 >
                   <ImGithub />
                 </a>
