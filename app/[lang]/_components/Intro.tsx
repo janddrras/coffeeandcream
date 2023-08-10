@@ -9,7 +9,7 @@ const Intro = () => {
 
   return (
     <motion.section
-      className="fixed bg-black top-0 left-0 right-0 bottom-0 flex items-center justify-center z-40"
+      className="fixed bg-black top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50"
       animate={{
         y: "-110%",
         transition: {

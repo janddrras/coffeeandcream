@@ -45,7 +45,7 @@ const Header = () => {
           initial={{ x: 0 }}
           animate={!mobile ? (top === 0 ? { x: 0 } : { x: -80 }) : false}
         >
-          <Link href={`/${locale}`}>
+          <Link href={`/${locale}`} aria-label="Back to homepage">
             <Logo size={60} r={14} strokeWidth={2} variant1={logoInner} whileHover="whileHover" />
           </Link>
 

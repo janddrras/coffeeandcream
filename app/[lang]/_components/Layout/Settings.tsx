@@ -48,7 +48,11 @@ const Settings = () => {
         />
         <motion.div className="w-full h-1 bg-coffee-80 dark:bg-cream-10" variants={lineVariant} />
         <motion.div className="w-full h-full bg-cream-20/95 dark:bg-coffee-80/95 relative origin-top" variants={backgroundVariant}>
-          <button className="absolute top-2 right-2 hover:text-brightRed text-xl" onClick={() => setSettings(false)}>
+          <button
+            className="absolute top-2 right-2 hover:text-brightRed text-xl"
+            onClick={() => setSettings(false)}
+            aria-label="Settings Button"
+          >
             <IoClose />
           </button>
           <motion.div className="" variants={contentVariant}>
