@@ -1,6 +1,6 @@
 "use client"
 
-import PriceCalculator from "./PriceCalculator"
+// import PriceCalculator from "./PriceCalculator"
 import SectionTitle from "../../_components/ui/SectionTitle"
 import prices from "../../_lib/dictionaries/contact/en.json"
 import { ContactFormContextProvider } from "../providers/ContactFormProvider"
@@ -19,7 +19,7 @@ const ContactForm = () => {
           <SectionTitle>{dict.contactPage.form.title}</SectionTitle>
           <Form />
         </div>
-        <PriceCalculator priceList={dict.contactPage.prices.items} />
+        {/* <PriceCalculator priceList={dict.contactPage.prices.items} /> */}
       </section>
     </ContactFormContextProvider>
   )
