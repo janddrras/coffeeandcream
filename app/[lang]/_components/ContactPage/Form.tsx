@@ -22,7 +22,6 @@ const Form = () => {
         errorMessage={error.nameErrorMessage}
         value={name}
         type="text"
-        isRequired
       />
       <TextInput
         label={dict.contactPage.form["text-inputs"][1]}
@@ -30,15 +29,12 @@ const Form = () => {
         errorMessage={error.emailErrorMessage}
         value={email}
         type="email"
-        isRequired
       />
       <AreaInput
         label={dict.contactPage.form["text-inputs"][2]}
         onChange={setMessage}
         value={message}
-        type="textarea"
         errorMessage={error.messageErrorMessage}
-        isRequired
       />
       <div className="flex flex-col items-center justify-between gap-8">
         <Checkbox isSelected={privacyAgreement} onChange={setPrivacyAgreement} labelStyles="text-sm" lineColor="red">

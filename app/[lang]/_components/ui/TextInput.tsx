@@ -1,32 +1,39 @@
 "use client"
 
 import { useRef, useState } from "react"
-import type { ChangeEvent } from "react"
-import type { AriaTextFieldProps } from "react-aria"
-import { useTextField } from "react-aria"
+import type { ChangeEvent, InputHTMLAttributes } from "react"
 import { motion } from "framer-motion"
 
-const TextInput = (props: AriaTextFieldProps) => {
+interface TextInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
+  label: string
+  errorMessage?: string
+  onChange?: (value: string) => void
+}
+
+const TextInput = (props: TextInputProps) => {
+  const { label, errorMessage, onChange, value, id, ...inputProps } = props
   const ref = useRef<HTMLInputElement>(null)
-  let { labelProps, inputProps, errorMessageProps } = useTextField(props, ref)
-  const labelText: string[] = Array.from(props.label as string)
+  const labelText: string[] = Array.from(label)
+  const inputId = id || `input-${label.toLowerCase().replace(/\s+/g, '-')}`
 
   const [focused, setFocused] = useState(false)
+  const [hasValue, setHasValue] = useState(Boolean(value))
+
   const onFocus = () => setFocused(true)
   const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    if (props.onChange) props.onChange(e.target.value)
-    e.target.value.length > 0 ? setFocused(true) : setFocused(false)
+    if (onChange) onChange(e.target.value)
+    setHasValue(e.target.value.length > 0)
   }
   const onBlur = () => {
     setFocused(false)
-    if (props.value) props.value.length > 0 ? setFocused(true) : setFocused(false)
+    setHasValue(Boolean(ref.current?.value))
   }
 
   return (
     <>
       <div className="relative w-full h-full pt-8">
         <label
-          {...labelProps}
+          htmlFor={inputId}
           className="absolute z-10 font-sans text-xl left-2 top-12 text-coffee-80/50 dark:text-cream-30/50 pointer-events-none"
         >
           {labelText.map((letter, index) => (
@@ -34,7 +41,7 @@ const TextInput = (props: AriaTextFieldProps) => {
               key={index}
               className={`inline-block ${letter === " " ? "w-2" : ""}`}
               initial={{ y: 0 }}
-              animate={focused ? { y: -42 } : { y: 0 }}
+              animate={(focused || hasValue) ? { y: -42 } : { y: 0 }}
               transition={{ duration: 0.2, ease: "easeInOut", delay: index * 0.06 }}
             >
               {letter}
@@ -43,6 +50,7 @@ const TextInput = (props: AriaTextFieldProps) => {
         </label>
         <input
           {...inputProps}
+          id={inputId}
           ref={ref}
           className="font-sans text-xl px-2 py-4 focus:outline-none z-10 w-full bg-cream-30/10 autofill:bg-cream-30/10 dark:bg-cream-90/10 dark:autofill:bg-coffee-90/10 dark:text-cream-10"
           value={props.value}
@@ -59,8 +67,8 @@ const TextInput = (props: AriaTextFieldProps) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         />
       </div>
-      <div className="px-2 h-6 font-sans text-lg text-brightRed -mt-4" {...errorMessageProps}>
-        {props.errorMessage ? props.errorMessage : ""}
+      <div className="px-2 h-6 font-sans text-lg text-brightRed -mt-4" role="alert">
+        {errorMessage || ""}
       </div>
     </>
   )
